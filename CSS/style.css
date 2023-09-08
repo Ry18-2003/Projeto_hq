@@ -5,7 +5,7 @@
 #layout_main  {
     font-family: 'Fragment Mono', Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     text-align: justify;
-    background-color: #EDEDED;
+    background-color: #F9F9F9;
 }
 html {
     tab-size: 4;
@@ -25,15 +25,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*IDs*/
 #header {
-    background-color: #EDEDED;
+    background-color: #FDFDFD;
     position: fixed;
     width: 100%;
     height: 65px;
+border-bottom: #CCC solid 1px;
+    z-index: 1;
 }
 #main {
     padding-top: 65px;
     width: 100%;
-    background-color: aqua;
 }
 #header * {
     height: inherit;
@@ -41,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 #header a {
     color: #000;
     text-decoration: none;
+}
+#footer {
+    background-color: #000;
+    height: 200px;
 }
 /*Class*/
 .container {
@@ -131,7 +136,6 @@ h1, h2, h3, h4, h5, h6 {
 .frame_big {
     width: 60%;
 }
-
 .frame_small {
     width: 35%;
 }
@@ -143,6 +147,46 @@ h1, h2, h3, h4, h5, h6 {
 .frame_big .carousel, .frame_small .events {
     height: 380px;
 }
+.carousel .iten_carousel {
+    background-color: gray;
+    width: 240px;
+    height: 300px;
+}
+.posts_area {
+    background-color: #fff;
+    height: 700px;
+}
+/*Product carousel*/
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+.title_product {
+    padding: 0 10vw;
+}
+.product_container {
+    overflow-x: auto;
+    padding: 0 10vw;
+    scroll-behavior: smooth;
+}
+.product_card {
+    flex: 0 0 auto;
+    height: 450px;
+    margin-right: 40px;
+    width: 250px;
+}
+.product_image {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.product_cape {
+    height: 100%;
+    object-fit: cover; /*Aplicavel para imagens e videos. Faz ficar certinho no container*/
+    width: 100%;
+}
 /*Specific Items*/
     .searth_bar {
         background-color: #aaa;
@@ -152,3 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 #header a:hover {
     opacity: .6;
 }
+    /*Products carousel*/
+    .product_container::-webkit-scrollbar {
+        display: none;
+    }
