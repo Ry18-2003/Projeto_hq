@@ -1,0 +1,154 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+#layout_main  {
+    font-family: 'Fragment Mono', Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    text-align: justify;
+    background-color: #EDEDED;
+}
+html {
+    tab-size: 4;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    margin: inherit;
+    padding: inherit;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: inherit;
+    padding: inherit;
+}
+/*IDs*/
+#header {
+    background-color: #EDEDED;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+}
+#main {
+    padding-top: 65px;
+    width: 100%;
+    background-color: aqua;
+}
+#header * {
+    height: inherit;
+}
+#header a {
+    color: #000;
+    text-decoration: none;
+}
+/*Class*/
+.container {
+    width:100%;
+    margin-right:auto;
+    margin-left:auto
+}
+@media(min-width:100%) {
+    .container {
+        max-width:100%;
+        padding-right:1.25rem;
+        padding-left:1.25rem
+    }
+}
+@media(min-width:540px) {
+    .container {
+        max-width:540px;
+        padding-right:1.25rem;
+        padding-left:1.25rem
+    }
+}
+@media(min-width:720px) {
+    .container {
+        max-width:720px;
+        padding-right:1.25rem;
+        padding-left:1.25rem
+    }
+}
+@media(min-width:960px) {
+    .container {
+        max-width:960px
+    }
+}
+@media(min-width:1140px) {
+    .container {
+        max-width:1140px
+    }
+}
+@media(min-width:1320px) {
+    .container {
+        max-width:1320px
+    }
+}
+.text_a {
+    text-align: start;
+}
+.iten_container {
+    align-items: center;
+}
+.iten_start {
+    align-items: start;
+}
+.align_in_div {
+    justify-content: space-between;
+}
+.order_one{
+    order: 1;
+}
+.order_two {
+    order: 2;
+}
+.pos_relative {
+    position: relative;
+}
+.pad_zero {
+    padding: 1rem;
+}
+.pad_one {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.inherit_width {
+    width: inherit;
+}
+.mar_rig_lef_auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+.mar_10px {
+    margin: 10px;
+}
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: nowrap;
+}
+.frame_big {
+    width: 60%;
+}
+
+.frame_small {
+    width: 35%;
+}
+.frame_big .carousel .bg, .frame_small .events .bg {
+    background-color: gray;
+    border-radius: 50px;
+    height: 90%;
+}
+.frame_big .carousel, .frame_small .events {
+    height: 380px;
+}
+/*Specific Items*/
+    .searth_bar {
+        background-color: #aaa;
+        width: 200px;
+    }
+/*Effects*/
+#header a:hover {
+    opacity: .6;
+}
