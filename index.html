@@ -10,9 +10,10 @@
         <div>
             <div>
                 <header id="header">
-                    <nav class="container inherit_width">
-                        <div class="iten_container flex flex-wrap align_in_div">
-                            <a class="flex iten_container" href="index.html"><img style="border-radius: 50%; border: 2px solid black;" src="Imagens/Logo.png" alt="logo.png"></a>
+                    <!--Area do cabeçalho-->
+                    <nav class="container inherit_width"><!--Delimitação do cabeçalho-->
+                        <div class="iten_container flex flex-wrap align_in_div"> <!--Organização dos itens-->
+                            <a class="flex iten_container" href="index.html"><img class="img_logo" src="Imagens/Logo.png" alt="logo.png"></a>
                             <div class="pad_one text_a">
                                 <a style="text-decoration: underline;" href="index.html">Home</a>
                                 <a href="#">Ler</a>
@@ -47,62 +48,19 @@
                                 </div>
                             </div>
                         </div>
-                        <section class="product">
-                            <h2 class="title_product">Title</h2>
-                            <button class="pre_btn"><img src="arrow" alt="Arrow_left"></button>
-                            <button class="ntx_btn"><img src="arrow" alt="Arrow_right"></button>
-                            <div class="flex product_container">
-                                <div class="product_card">
-                                    <div class="product_info">Titulo</div>
-                                    <div class="product_image"><img class="product_cape" src="Imagens/wolfwhite.jpg " alt=""></div>
+                        <section> <!--Area dos Carrosels-->
+                             <div class="slider">
+                                <div class="slides">
+                                    <!--Radio Buttons-->
+                                     <input type="radio" name="radio-btn" id="radio1"> 
+                                     <input type="radio" name="radio-btn" id="radio2"> 
+                                     <input type="radio" name="radio-btn" id="radio3"> 
+                                     <input type="radio" name="radio-btn" id="radio4"> 
                                 </div>
-                            </div>
+                             </div>
                         </section>
                         <div>
-                            <h2>Produtos</h2>
-                            <div class="flex carousel">
-                                <button class="pre-btn"><img src="arrow" alt="Arrow_left"></button>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <button class="ntx-btn"><img src="arrow" alt="Arrow_right"></button>
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Populares</h2>
-                            <div class="flex carousel">
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Novos lançamentos</h2>
-                            <div class="flex carousel">
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex">
-                                <h2>Generos Populares</h2>
-                                <div class="btn_selection_a">
-                                    <button>Romance</button>
-                                    <button>Drama</button>
-                                    <button>Mistério</button>
-                                    <button>Fantasia</button>
-                                </div>
-                            </div>
-                            <div class="flex carousel">
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                                <div class="mar_rig_lef_auto iten_carousel"><a href="#">produto</a></div>
-                            </div>
+                            
                         </div>
                         <div class="posts_area">
                             <h2>Atualizados</h2>
@@ -115,5 +73,6 @@
                 </footer>
             </div>
         </div>
+        <script src="JavaScript/script.js"></script>
     </body>
 </html>
