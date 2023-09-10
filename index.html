@@ -44,10 +44,10 @@
                     <!--Corpo do site-->
                     <div class="container">
                         <!--Delimitação do espaço-->
-                        <section class="container_top">
+                        <section class="container_top flex">
                             <!--Area do carrosel e eventos-->
                             <div class="slider">
-                                <div class="flex slides">
+                                <nav class="flex slides">
                                     <!--Radio Btns-->
                                     <input type="radio" name="radio-btn" id="radio1"> 
                                     <input type="radio" name="radio-btn" id="radio2"> 
@@ -83,7 +83,7 @@
                                         <label for="radio5" class="auto_btn5"></label>
                                         <label for="radio6" class="auto_btn6"></label>
                                     </nav>                                        
-                                </div>
+                                </nav>
                                 <!--Manual nav-->
                                 <nav class="flex align_two manual_navgation">
                                     <label for="radio1" class="manual_btn"></label>
@@ -92,6 +92,49 @@
                                     <label for="radio4" class="manual_btn"></label>
                                     <label for="radio5" class="manual_btn"></label>
                                     <label for="radio6" class="manual_btn"></label>
+                                </nav>
+                            </div>
+                            <div class="slider_ev events">
+                                <nav class="slides_ev">
+                                    <!--Radios-->
+                                    <input type="radio" name="radio-btn" id="radioEv1">
+                                    <input type="radio" name="radio-btn" id="radioEv2">
+                                    <input type="radio" name="radio-btn" id="radioEv3">
+                                    <input type="radio" name="radio-btn" id="radioEv4">
+                                    <input type="radio" name="radio-btn" id="radioEv5">
+                                    <input type="radio" name="radio-btn" id="radioEv6">
+                                    <!--Area das noticias/eventos-->
+                                    <div class="slide_ev">
+                                        <h4>Titulo</h4>
+                                        <p>Conteudo</p>
+                                    </div>
+                                    <div class="slide_ev">
+                                        <h4>Titulo</h4>
+                                        <p>Conteudo</p>
+                                    </div>
+                                    <div class="slide_ev slide_space" style="background-color: transparent;"> <!--Trabalhar dpois-->
+                                    </div>
+                                    <div class="slide_ev">
+                                        <h4>Titulo</h4>
+                                        <p>Conteudo</p>
+                                    </div>
+                                    <div class="slide_ev">
+                                        <h4>Titulo</h4>
+                                        <p>Conteudo</p>
+                                    </div>
+                                    <div class="slide_ev">
+                                        <h4>Titulo</h4>
+                                        <p>Conteudo</p>
+                                    </div>
+                                    <div class="slide_ev">
+                                        <h4>Titulo</h4>
+                                        <p>Conteudo</p>
+                                    </div>
+                                </nav>
+                                <nav class="flex align_two manual_navgation">
+                                    <label for="radioEv1, radioEv2" class="manual_btn ev_btn"></label>
+                                    <label for="radioEv2" class="manual_btn ev_btn"></label>
+                                    <label for="radioEv3" class="manual_btn ev_btn"></label>
                                 </nav>
                             </div>
                         </section><!--Fim da area dos carrosels-->

@@ -20,9 +20,9 @@ ul, ol, li {
     padding: inherit;
     overflow: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: inherit;
-    padding: inherit;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
 #main { /*Corpo principal do site*/
     padding-top: 65px;
@@ -36,9 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container_top {
     width:100%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
-
 @media(min-width:100%) {
     .container {
         max-width:100%;
@@ -70,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
     .container {
         max-width:1320px;
     }
+    .container_top .events {
+        width: 520px;
+    }
 }
 @media(max-width:800px) {
     .container {
@@ -87,4 +89,17 @@ h1, h2, h3, h4, h5, h6 {
         margin-right: 70px;
     }
 }
+@media (max-width: 1050px) {
+    section .slider {
+        margin: 0 auto;
+    }
+    .container_top .events {
+        display: none;
+    }
+}
 
+@media (max-width: 1320px) {
+    .container_top .events {
+        width: 340px;
+    }
+}

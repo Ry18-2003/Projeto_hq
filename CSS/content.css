@@ -2,7 +2,7 @@
 
 /*CARROSEL*/
     /*CARROSEL PRINCIPAL*/
-    .slider { /*Posicionamento do carrosel*/
+    .slider, .slider_ev { /*Posicionamento do carrosel*/
         border-radius: 50px;
         height: 400px;
         /*margin: 0 auto;*/ /*Ativar caso de erro*/
@@ -13,7 +13,7 @@
         height: 400px;
         width: 600%; /*Porcentagem pelo número de imagens*/
     }
-    .slides input { /*Esconde os inputs de verdade*/
+    .slides input, .slides_ev input { /*Esconde os inputs de verdade*/
         display: none;
     }
     .slide { /*Ajuste*/
@@ -87,8 +87,37 @@
     #radio6:checked ~ .one_slide {
         margin-left: -83.33333333333334%;
     }
+    /*Carrosel de eventos*/
+    .events {
+        margin-left: 10px;
+        background-color: #ddd;
+    }
+    .slides_ev {
+        padding: 20px;
+        height: 400px;
+    }
+    .slide_ev {
+        background-color: #eee;
+        width: 480px;
+        height: 42%;
+        border-radius: 10px;
+    }
+    .ev_btn {
+        border: 4px solid #000;
+    }
+    .ev_btn:not(:last-child) {
+        margin-right: 40px;
+    }
+    .slide_ev:not(:first-child) {
+        margin-top: 10px;
+    }
+    /*Manipulação do radio*/
+    #radioEv1:checked ~ .one
     /*Effects*/
     .manual_btn:hover { /*Botão do carrosel*/
         background-color: #fff;
         transition: .1s;
+    }
+    .ev_btn:hover {
+        background-color: #000;
     }
