@@ -24,151 +24,67 @@ h1, h2, h3, h4, h5, h6 {
     margin: inherit;
     padding: inherit;
 }
-/*IDs*/
-#header { /*Cabeçalho*/
-    background-color: #FDFDFD;
-    position: fixed;
-    width: 100%;
-    height: 65px;
-border-bottom: #CCC solid 1px;
-    z-index: 9;
-}
 #main { /*Corpo principal do site*/
     padding-top: 65px;
     width: 100%;
 }
-#header * { /*Definição da altura dentro do cabeçalho*/
-    height: inherit;
-}
-#header a { /*Definição dos links do cabeçalho*/
-    color: #000;
-    text-decoration: none;
-}
-#footer { /*Rodape*/
-    background-color: #000;
-    height: 200px;
-}
-/*Class*/
 /*Container. Delimita a area de espansão.*/
 .container {
     width:100%;
     margin-right:auto;
-    margin-left:auto
+    margin-left:auto;
 }
+.container_top {
+    width:100%;
+    margin: 0 auto;
+}
+
 @media(min-width:100%) {
     .container {
         max-width:100%;
         padding-right:1.25rem;
-        padding-left:1.25rem
+        padding-left:1.25rem;
     }
 }
-@media(min-width:540px) {
+@media(min-width:800px) {
     .container {
-        max-width:540px;
+        max-width:800px;
         padding-right:1.25rem;
-        padding-left:1.25rem
+        padding-left:1.25rem;
     }
-}
-@media(min-width:720px) {
-    .container {
-        max-width:720px;
-        padding-right:1.25rem;
-        padding-left:1.25rem
+    .user {
+        margin-right: 30px;
     }
 }
 @media(min-width:960px) {
     .container {
-        max-width:960px
+        max-width:960px;
     }
 }
 @media(min-width:1140px) {
     .container {
-        max-width:1140px
+        max-width:1140px;
     }
 }
 @media(min-width:1320px) {
     .container {
-        max-width:1320px
+        max-width:1320px;
     }
 }
-.img_logo { /*Borda da logo*/
-    border-radius: 50%; 
-    border: 2px solid black;
-}
-.text_a { /*Deixando o texto mais proximo*/
-    text-align: start;
-}
-.iten_container { /*Deixa os itens no centro dentro do container*/
-    align-items: center;
-}
-.iten_start { /*Alinha ao começo*/
-    align-items: start;
-}
-.align_in_div { /*Espaçamento dos itens*/
-    justify-content: space-between;
-}
-.order_one{ /*Posicionamento dos itens*/
-    order: 1;
-}
-.order_two { /*Posicionamento dos itens*/
-    order: 2;
-}
-.pos_relative { /*Posição em relação ao container*/
-    position: relative;
-}
-.pad_zero { /*Padding (espaçamento interno), em proporção ao texto*/
-    padding: 1rem;
-}
-.pad_one { /*Padding (espaçamento interno), em proporção ao texto*/
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-.inherit_width { /*Largura herdada*/
-    width: inherit;
-}
-.mar_rig_lef_auto { /*Margins automaticas (para centralização)*/
-    margin-right: auto;
-    margin-left: auto;
-}
-.mar_10px { /*Margin de 10pixels*/
-    margin: 10px;
-}
-.flex { /*Display flexivel para organização dos itens lado a lado*/
-    display: flex;
-}
-.flex-wrap { /*Flex wrap, para definir como os itens se ajustão na tela*/
-    flex-wrap: nowrap;
-}
-.frame_big { /*Espaçõ do carrosel principal*/
-    width: 60%;
-}
-.frame_small { /*Espaço do carrosel vertical de noticias*/
-    width: 35%;
-}
-.frame_big .carousel .bg, .frame_small .events .bg { /*a decidir*/
-    background-color: gray;
-    border-radius: 50px;
-    height: 90%;
-}
-.frame_big .carousel, .frame_small .events { /*A decidir*/
-    height: 380px;
-}
-.carousel .iten_carousel { /*A decidir*/
-    background-color: gray;
-    width: 240px;
-    height: 300px;
-}
-.posts_area { /*Area da postagem de lançamento*/
-    background-color: #fff;
-    height: 700px;
-}
-/*Product carousel*/
-/*Specific Items*/
-    .searth_bar { /*Barra de pesquisa*/
-        background-color: #aaa;
-        width: 200px;
+@media(max-width:800px) {
+    .container {
+        min-width:800px;
+        padding-right:1.25rem;
+        padding-left:1.25rem;
     }
-/*Effects*/
-#header a:hover { /*Esmaecimento dos itens no cabeçalho*/
-    opacity: .6;
+    section .auto_navgation {
+        margin-left: 20px;
+    }
+    section .slider {
+        margin: 0 auto;
+    }
+    .user {
+        margin-right: 70px;
+    }
 }
+

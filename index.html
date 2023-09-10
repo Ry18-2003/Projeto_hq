@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/content.css">
+        <link rel="stylesheet" href="CSS/item.css">
         <title>Document</title>
     </head>
     <body id="layout_main">
@@ -11,64 +14,94 @@
             <div>
                 <header id="header">
                     <!--Area do cabeçalho-->
-                    <nav class="container inherit_width"><!--Delimitação do cabeçalho-->
-                        <div class="iten_container flex flex-wrap align_in_div"> <!--Organização dos itens-->
-                            <a class="flex iten_container" href="index.html"><img class="img_logo" src="Imagens/Logo.png" alt="logo.png"></a>
+                    <nav class="container inherit_width">
+                        <!--Delimitação do cabeçalho-->
+                        <div class="iten_container flex flex-wrap align_one">
+                            <!--Organização dos itens-->
+                            <a class="flex iten_container" href="index.html"><img class="img_logo" src="Imagens/Logo.png" alt="logo.png"></a><!--Logo-->
                             <div class="pad_one text_a">
+                                <!--Areas principais do site-->
                                 <a style="text-decoration: underline;" href="index.html">Home</a>
                                 <a href="#">Ler</a>
                                 <a href="#">Lojá</a>
                                 <a href="#">Fórum</a>
                             </div>
                             <div class="flex">
+                                <!--Barra de pesquisa-->
                                 <div class="searth_bar">
                                 </div>
                             </div>
-                            <div class="pad_one text_a">
+                            <div class="user pad_one text_a">
+                                <!--Areas de users-->
                                 <a href="#">User</a>
                                 <a href="#">Fav</a>
                                 <a href="#">Not</a>
                             </div>
                         </div>
                     </nav>
-                </header>
+                </header><!--Fim do cabeçalho-->
                 <main id="main">
+                    <!--Corpo do site-->
                     <div class="container">
-                        <div class="flex align_in_div">
-                            <div class="frame_big">
-                                <div class="carousel mar_10px">
-                                    <div class="bg">
-
+                        <!--Delimitação do espaço-->
+                        <section class="container_top">
+                            <!--Area do carrosel e eventos-->
+                            <div class="slider">
+                                <div class="flex slides">
+                                    <!--Radio Btns-->
+                                    <input type="radio" name="radio-btn" id="radio1"> 
+                                    <input type="radio" name="radio-btn" id="radio2"> 
+                                    <input type="radio" name="radio-btn" id="radio3"> 
+                                    <input type="radio" name="radio-btn" id="radio4">
+                                    <input type="radio" name="radio-btn" id="radio5">
+                                    <input type="radio" name="radio-btn" id="radio6">
+                                    <!--Img slides-->
+                                    <div class="slide pos_relative one_slide">
+                                        <img src="Imagens/wolfwhite.jpg" alt="Primeira imagens">
                                     </div>
+                                    <div class="slide pos_relative two_slide">
+                                        <img src="Imagens/115237.png" alt="Primeira imagens">
+                                    </div>
+                                    <div class="slide pos_relative three_slide">
+                                        <img src="Imagens/ruv.jpeg" alt="Primeira imagens">
+                                    </div>
+                                    <div class="slide pos_relative four_slide">
+                                        <img src="Imagens/selo_nico_robin.png" alt="Primeira imagens">
+                                    </div>
+                                    <div class="slide pos_relative five_slide">
+                                        <img src="Imagens/oh_i_hate_this.jpg" alt="Primeira imagens">
+                                    </div>
+                                    <div class="slide pos_relative six_slide">
+                                        <img src="Imagens/angel3.png" alt="Primeira imagens">
+                                    </div>
+                                    <!--Nav auto-->
+                                    <nav class="flex align_two auto_navgation">
+                                        <label for="radio1" class="auto_btn1"></label>
+                                        <label for="radio2" class="auto_btn2"></label>
+                                        <label for="radio3" class="auto_btn3"></label>
+                                        <label for="radio4" class="auto_btn4"></label>
+                                        <label for="radio5" class="auto_btn5"></label>
+                                        <label for="radio6" class="auto_btn6"></label>
+                                    </nav>                                        
                                 </div>
+                                <!--Manual nav-->
+                                <nav class="flex align_two manual_navgation">
+                                    <label for="radio1" class="manual_btn"></label>
+                                    <label for="radio2" class="manual_btn"></label>
+                                    <label for="radio3" class="manual_btn"></label>
+                                    <label for="radio4" class="manual_btn"></label>
+                                    <label for="radio5" class="manual_btn"></label>
+                                    <label for="radio6" class="manual_btn"></label>
+                                </nav>
                             </div>
-                            <div class="frame_small mar_10px">
-                                <div class="events">
-                                    <div class="bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <section> <!--Area dos Carrosels-->
-                             <div class="slider">
-                                <div class="slides">
-                                    <!--Radio Buttons-->
-                                     <input type="radio" name="radio-btn" id="radio1"> 
-                                     <input type="radio" name="radio-btn" id="radio2"> 
-                                     <input type="radio" name="radio-btn" id="radio3"> 
-                                     <input type="radio" name="radio-btn" id="radio4"> 
-                                </div>
-                             </div>
-                        </section>
-                        <div>
-                            
-                        </div>
-                        <div class="posts_area">
+                        </section><!--Fim da area dos carrosels-->
+                        <div class="posts_area"><!--Area de lançamentos-->
                             <h2>Atualizados</h2>
                             <div class="posts"></div>
-                        </div>
+                        </div><!--Fim da area de lançamentos-->
                     </div>
-                </main>
-                <footer id="footer">
+                </main><!--Fim do corpo-->
+                <footer id="footer"><!--Rodapé-->
                     
                 </footer>
             </div>

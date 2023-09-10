@@ -1,0 +1,94 @@
+/*CSS DE CONTEUDO, DE ESTILIZAÇÂO UNICOS*/
+
+/*CARROSEL*/
+    /*CARROSEL PRINCIPAL*/
+    .slider { /*Posicionamento do carrosel*/
+        border-radius: 50px;
+        height: 400px;
+        /*margin: 0 auto;*/ /*Ativar caso de erro*/
+        overflow: hidden; /*Esconde o excedente*/
+        width: 750px;
+    }
+    .slides { /*Os slides do carrosel distancia entre eles*/
+        height: 400px;
+        width: 600%; /*Porcentagem pelo número de imagens*/
+    }
+    .slides input { /*Esconde os inputs de verdade*/
+        display: none;
+    }
+    .slide { /*Ajuste*/
+        width: 16.666666666666668%; /*porcentagem em relação a porcentagem anterior. Assim sendo 100% da imagem*/
+    }
+    .slide img{
+        height: 100%;
+        object-fit: cover; /*Ajusta imagens*/
+        width: 100%; /*Ativar caso de erro*/
+    }
+    .manual_navgation { /*posição do btns*/
+        margin-top: -40px;
+        position: relative;
+    }
+    .manual_btn, .auto_navgation label{ /*Como os btns vão ficar*/
+        border: 4px solid #ddd;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .5;
+        padding: 10px;
+        z-index: 1;
+    }
+    .auto_navgation label {
+        border: 4px solid #000;
+    }
+    .auto_navgation {
+        margin-top: 360px;
+        position: absolute;
+        width: 750px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        z-index: 0;
+    }
+    .manual_btn:not(:last-child), .auto_navgation label { /*Para separar os btns menos o ultimo*/
+        margin-right: 40px;
+    }
+    /*Manipulação do radio*/
+    #radio1:checked ~ .auto_navgation .auto_btn1 {
+        background-color: #0AA;
+    }
+    #radio2:checked ~ .auto_navgation .auto_btn2 {
+        background-color: #0AA;
+    }
+    #radio3:checked ~ .auto_navgation .auto_btn3 {
+        background-color: #0AA;
+    }
+    #radio4:checked ~ .auto_navgation .auto_btn4 {
+        background-color: #0AA;
+    }
+    #radio5:checked ~ .auto_navgation .auto_btn5 {
+        background-color: #0AA;
+    }
+    #radio6:checked ~ .auto_navgation .auto_btn6  {
+        background-color: #0AA;
+    }
+    #radio1:checked ~ .one_slide {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .one_slide {
+        margin-left: -16.666666666666668%;
+    }
+    #radio3:checked ~ .one_slide {
+        margin-left: -33.333333333333336%;
+    }
+    #radio4:checked ~ .one_slide {
+        margin-left: -50%;
+    }
+    #radio5:checked ~ .one_slide {
+        margin-left: -66.66666666666667%;
+    }
+    #radio6:checked ~ .one_slide {
+        margin-left: -83.33333333333334%;
+    }
+    /*Effects*/
+    .manual_btn:hover { /*Botão do carrosel*/
+        background-color: #fff;
+        transition: .1s;
+    }

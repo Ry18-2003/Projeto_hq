@@ -1,0 +1,58 @@
+/*CSS DE ITENS DE UTILIDADE GERAL E ALGUNS AGRUPAMENTOS (POSTERIOR)*/
+
+/*TEXT ALIGN*/
+.text_a { /*Deixando o texto mais proximo*/
+    text-align: start;
+}
+
+/*ALIGN ITEMS*/
+.iten_container { /*Deixa os itens no centro dentro do container*/
+    align-items: center;
+}
+.iten_start { /*Alinha ao começo*/
+    align-items: start;
+}
+
+/*JUSTIFY CONTENT*/
+.align_one { /*Espaçamento dos itens*/
+    justify-content: space-between;
+}
+.align_two { /*Espaçamento dos itens*/
+    justify-content: center;
+}
+
+/*ORDER*/
+.order_one{ /*Posicionamento dos itens*/
+    order: 1;
+}
+.order_two { /*Posicionamento dos itens*/
+    order: 2;
+}
+/*POSITION*/
+.pos_relative { /*Posição em relação ao container*/
+    position: relative;
+}
+
+.pad_zero { /*Padding (espaçamento interno), em proporção ao texto*/
+    padding: 1rem;
+}
+.pad_one { /*Padding (espaçamento interno), em proporção ao texto*/
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.inherit_width { /*Largura herdada*/
+    width: inherit;
+}
+.mar_rig_lef_auto { /*Margins automaticas (para centralização)*/
+    margin-right: auto;
+    margin-left: auto;
+}
+.mar_10px { /*Margin de 10pixels*/
+    margin: 10px;
+}
+.flex { /*Display flexivel para organização dos itens lado a lado*/
+    display: flex;
+}
+.flex-wrap { /*Flex wrap, para definir como os itens se ajustão na tela*/
+    flex-wrap: nowrap;
+}
