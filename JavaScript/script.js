@@ -1,6 +1,8 @@
 let cont = 1;
 document.getElementById("radio1").checked = true;
 
+document.getElementById("_radio_Ev1").checked = true;
+
 setInterval(function(){
     nextImage();
 }, 5000)
