@@ -168,6 +168,38 @@
     .index_procura {
         background-color: #DDD;
     }
+    .index_procura .item {
+        padding: 15px 0;
+    }
+    .item p {
+        cursor: pointer;
+    }
+    .container_search_bar {
+        width: 650px;
+    }
+    .search_bar {
+        background-color: #fff;
+        border: #999 1px solid;
+        font-size: 1rem;
+        height: 45px;
+        margin: 0 auto;
+        outline: none;
+        padding: 0 20px;
+        width: 100%;
+    
+        &:focus{
+            border: 1px solid #000;
+            transition: 0.35s ease;
+            color: #000;
+        }
+    }
     /*Catalago de pesquisa, Lojá*/
     /*Catalago de pesquisa, Header (Cabeçalho)*/
-    
+    /*Effects*/
+    .item p:hover {
+        opacity: .6;
+    }
+/*Conteudo*/
+.catalog .item {
+    height: 350px;
+}

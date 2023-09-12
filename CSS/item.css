@@ -58,3 +58,15 @@
 #header .text_decor { /*Para decoração do cabeçalho*/
     text-decoration: underline;
 }
+.limit_y_one {
+    height: 250px;
+}
+.p_space_one:not(:first-child) {
+    padding-left: 40px;
+}
+.m_space_one p:not(:first-child) {
+    margin-left: 15px;
+}
+.middle_screen {
+    width: 50%;
+}
