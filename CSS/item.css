@@ -55,3 +55,6 @@
 .flex-wrap { /*Flex wrap, para definir como os itens se ajustão na tela*/
     flex-wrap: nowrap;
 }
+#header .text_decor { /*Para decoração do cabeçalho*/
+    text-decoration: underline;
+}

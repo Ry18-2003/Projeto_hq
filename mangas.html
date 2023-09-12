@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabeçalho com logo e menus</title>
-  <style>
-    body {
-  font-family: sans-serif;
-}
-
-header {
-  width: 100%;
-  height: 50px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.header_main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_logo {
-  width: 50px;
-  height: 50px;
-}
-
-.img_size {
-    width: 50px;
-    border-radius: 50%;
-}
-
-.menu_itens {
-  display: flex;
-}
-
-.menu_item {
-  width: 8vw;
-  text-align: center;
-  color: #000000;
-  font-size: 16px;
-  font-weight: bold;
-}
-  </style>
-</head>
-<body>
-  <header>
-    <div class="header_main">
-      <div class="header_logo">
-        <a href="index.html"><img class="img_size" src="Imagens/OIG.png" alt="Logo tipo"></a>
-      </div>
-      <div class="menu_itens">
-        <div class="menu_item">
-          <a href="#">Le Copper</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/content.css">
+        <link rel="stylesheet" href="CSS/item.css">
+        <title>Document</title>
+    </head>
+    <body id="layout_main">
+        <div>
+            <div>
+                <header id="header">
+                    <!--Area do cabeçalho-->
+                    <nav class="container inherit_width">
+                        <!--Delimitação do cabeçalho-->
+                        <div class="iten_container flex flex-wrap align_one">
+                            <!--Organização dos itens-->
+                            <a class="flex iten_container" href="index.html"><img class="img_logo" src="IMG/Logo.png" alt="logo.png"></a><!--Logo-->
+                            <div class="pad_one text_a">
+                                <!--Areas principais do site-->
+                                <a class="text_decor" href="index.html">Home</a>
+                                <a href="#">Ler</a>
+                                <a href="#">Lojá</a>
+                                <a href="#">Fórum</a>
+                            </div>
+                            <div class="flex">
+                                <!--Barra de pesquisa-->
+                                <div class="searth_bar">
+                                </div>
+                            </div>
+                            <div class="pad_one text_a">
+                                <!--Areas de users-->
+                                <a href="#">User</a>
+                                <a href="#">Fav</a>
+                                <a href="#">Not</a>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <main id="main">
+                    <div class="container">
+                        <!--Area de procura de quadrinhos-->
+                        <section class="index_procura flex">
+                            <div>
+                                <h4>Origem</h4>
+                                <div class="flex">
+                                    <p>Japão</p>
+                                    <p>Coreia</p>
+                                    <p>China</p>
+                                    <p>EUA</p>
+                                    <p>Europa</p>
+                                    <p>Nacional</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Status</h4>
+                                <div class="flex">
+                                    <p>Qualquer</p>
+                                    <p>Completo</p>
+                                    <p>Em andamento</p>
+                                    <p>Hiato</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Organizado por</h4>
+                                <div class="flex">
+                                    <p>Nome</p>
+                                    <p>Popular</p>
+                                    <p>Capítulos</p>
+                                    <p>Novo</p>
+                                    <p>Avaliação</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
         </div>
-        <div class="menu_item">
-          <a href="#">HQ</a>
-        </div>
-        <div class="menu_item">
-          <a href="#">Lojá</a>
-        </div>
-        <div class="menu_item">
-          <a href="#">Forum</a>
-        </div>
-      </div>
-    </div>
-  </header>
-</body>
+    </body>
 </html>

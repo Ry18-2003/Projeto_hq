@@ -154,9 +154,6 @@
     #Ev3:checked ~ .mark_navgation .btn3 {
         background-color: #000;
     }
-    #Ev1:checked ~ .btn1 {
-        background-color: #000;
-    }
     /*Effects*/
     .manual_btn:hover { /*Botão do carrosel*/
         background-color: #fff;
@@ -165,3 +162,12 @@
     .ev_btn:hover {
         background-color: #000;
     }
+
+/*Pesquisa*/
+    /*Catalago de pesquisa, Leitura HQ*/
+    .index_procura {
+        background-color: #DDD;
+    }
+    /*Catalago de pesquisa, Lojá*/
+    /*Catalago de pesquisa, Header (Cabeçalho)*/
+    
