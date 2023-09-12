@@ -1,10 +1,10 @@
 /*CSS DO CABEÇALHO E OS ITENS DENTRO DELE*/
 #header { /*Cabeçalho*/
     background-color: #FDFDFD;
+    border-bottom: #CCC solid 1px;
+    height: 65px;
     position: fixed;
     width: 100%;
-    height: 65px;
-    border-bottom: #CCC solid 1px;
     z-index: 9;
 }
 #header * { /*Definição da altura dentro do cabeçalho*/
@@ -15,8 +15,8 @@
     text-decoration: none;
 }
 .img_logo { /*Borda da logo*/
-    border-radius: 50%; 
     border: 2px solid black;
+    border-radius: 50%; 
 }
 .searth_bar { /*Barra de pesquisa*/
     background-color: #aaa;
@@ -24,6 +24,6 @@
 }
 /*Effects*/
 #header a:hover { /*Esmaecimento dos itens no cabeçalho*/
-    opacity: .4;
     border-radius: 50%;
+    opacity: .4;
 }

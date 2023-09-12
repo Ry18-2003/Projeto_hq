@@ -40,14 +40,13 @@
         border: 4px solid #000;
     }
     .auto_navgation, .mark_navgation {
+        margin-bottom: 40px;
         margin-top: 360px;
         position: absolute;
         width: 750px;
-        margin-left: 20px;
-        margin-bottom: 40px;
         z-index: 0;
     }
-    .manual_btn:not(:last-child), .auto_navgation label { /*Para separar os btns menos o ultimo*/
+    .manual_btn:not(:last-child), .auto_navgation label:not(:last-child) { /*Para separar os btns menos o ultimo*/
         margin-right: 40px;
     }
     /*Manipulação do radio*/
@@ -89,18 +88,18 @@
     }
     /*Carrosel de eventos*/
     .events {
-        margin-left: 10px;
         background-color: #ddd;
+        margin-left: 10px;
     }
     .slides_ev {
-        padding: 20px;
         height: 400px;
+        padding: 20px;
     }
     .slide_ev {
         background-color: #eee;
-        width: 480px;
-        height: 160px;
         border-radius: 10px;
+        height: 160px;
+        width: 480px;
     }
     .ev_btn {
         border: 4px solid #000;
@@ -115,25 +114,47 @@
         background-color: transparent;
         height: 80px;
     }
-    .mark_navgation {
+    .mark_navgation div{
+        border: 4px solid transparent;
+    }
+    /*Manipulação do radio evento*/
+    #Ev1:checked ~ .firts_evt {
+        margin-top: 10px;
+        transition: .6s;
+    }
+    #Ev1:checked ~ .mark_navgation {
         margin: 0;
         margin-top: -860px;
         width: 480px;
     }
-    /*Manipulação do radio*/
-    #_radio_Ev1:checked ~ .firts_evt {
-        margin-top: 10px;
-        transition: 1s;
+    #Ev1:checked ~ .mark_navgation .btn1 {
+        background-color: #000;
     }
-    #_radio_Ev2:checked ~ .firts_evt {
+    #Ev2:checked ~ .firts_evt {
         margin-top: -420px;
-        transition: 1s;
+        transition: .6s;
     }
-    #_radio_Ev3:checked ~ .firts_evt {
+    #Ev2:checked ~ .mark_navgation {
+        margin: 0;
+        margin-top: -430px;
+        width: 480px;
+    }
+    #Ev2:checked ~ .mark_navgation .btn2 {
+        background-color: #000;
+    }
+    #Ev3:checked ~ .firts_evt {
         margin-top: -850px;
-        transition: 1s;
+        transition: .6s;
     }
-    #_radio_Ev1:checked ~ .btn1 {
+    #Ev3:checked ~ .mark_navgation {
+        margin: 0;
+        margin-top: 0px;
+        width: 480px;
+    }
+    #Ev3:checked ~ .mark_navgation .btn3 {
+        background-color: #000;
+    }
+    #Ev1:checked ~ .btn1 {
         background-color: #000;
     }
     /*Effects*/

@@ -32,20 +32,19 @@
 .pos_relative { /*Posição em relação ao container*/
     position: relative;
 }
-
 .pad_zero { /*Padding (espaçamento interno), em proporção ao texto*/
     padding: 1rem;
 }
 .pad_one { /*Padding (espaçamento interno), em proporção ao texto*/
-    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
 }
 .inherit_width { /*Largura herdada*/
     width: inherit;
 }
 .mar_rig_lef_auto { /*Margins automaticas (para centralização)*/
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 .mar_10px { /*Margin de 10pixels*/
     margin: 10px;
