@@ -200,6 +200,21 @@
         opacity: .6;
     }
 /*Conteudo*/
+/*Catalago*/
+.catalog {
+    margin: 30px 0;
+}
 .catalog .item {
     height: 350px;
+}
+.catalog img {
+    height: 100%;
+}
+.catalog .btns { /*BTN COM OS GENEROS < ESTILIZAR*/
+    outline: none;
+}
+/*Market // Loja*/
+
+.category_market {
+    /**/
 }
