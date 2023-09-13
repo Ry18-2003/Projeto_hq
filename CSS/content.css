@@ -290,6 +290,9 @@
         opacity:.6;
     }
 /*Paginas*/
+.frente_ler {
+    height: 450px;
+}
 .img_ler {
     height: 300px;
     width: 200px;
@@ -299,11 +302,17 @@
     width: 100%;
 }
 .descri_ler {
-    height: 400px;
+    height: 450px;
     width: 850px;
 }
 main .descri_ler p {
     margin-left: 10px;
+}
+.fav_ler {
+    align-items: center;
+}
+.fav_ler img {
+    width: 70px;
 }
 .descri_ler *:not(ul, li) {
     margin: 10px 0;
