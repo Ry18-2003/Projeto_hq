@@ -57,6 +57,12 @@
 .mar_10px { /*Margin de 10pixels*/
     margin: 10px;
 }
+.mar_20px {
+    margin: 20px 0;
+}
+.mar_lr_10px {
+    margin: 0 10px;
+}
 .flex { /*Display flexivel para organização dos itens lado a lado*/
     display: flex;
 }
