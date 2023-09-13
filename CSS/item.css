@@ -45,6 +45,9 @@
 .pad_left_zero {
     padding-left: 3rem;
 }
+.pad_bt {
+    padding-bottom: 2rem;
+}
 .inherit_width { /*Largura herdada*/
     width: inherit;
 }
@@ -74,4 +77,7 @@
 }
 .middle_screen { /*50% da tela*/
     width: 50%;
+}
+.border_b_gray {
+    border-bottom: 1px solid #888;
 }

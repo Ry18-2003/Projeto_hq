@@ -237,6 +237,9 @@
 }
 /*USER*/
     /*USER*/
+    #no_pad {
+        padding-top: 0;
+    }
     .top_box {
         border-bottom: 1px solid #000;
     }
