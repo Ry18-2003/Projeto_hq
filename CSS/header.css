@@ -22,6 +22,14 @@
     background-color: #aaa;
     width: 200px;
 }
+#header .user_area img {
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    padding: .5rem;
+}
 /*Effects*/
 #header a:hover { /*Esmaecimento dos itens no cabeçalho*/
     border-radius: 50%;

@@ -38,6 +38,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 20px auto;
     width:100%;
 }
+.container_product {
+    width: 400px;
+    height: 300px;
+    padding: 1.25rem;
+}
 @media(min-width:100%) {
     .container {
         max-width:100%;

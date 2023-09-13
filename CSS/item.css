@@ -4,7 +4,9 @@
 .text_a { /*Deixando o texto mais proximo*/
     text-align: start;
 }
-
+.text_b {
+    text-align: center;
+}
 /*ALIGN ITEMS*/
 .iten_container { /*Deixa os itens no centro dentro do container*/
     align-items: center;
@@ -12,7 +14,6 @@
 .iten_start { /*Alinha ao começo*/
     align-items: start;
 }
-
 /*JUSTIFY CONTENT*/
 .align_one { /*Espaçamento dos itens*/
     justify-content: space-between;
@@ -20,7 +21,6 @@
 .align_two { /*Espaçamento dos itens*/
     justify-content: center;
 }
-
 /*ORDER*/
 .order_one{ /*Posicionamento dos itens*/
     order: 1;
@@ -39,12 +39,17 @@
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
 }
+.pad_two {
+    padding: 1.5rem;
+}
+.pad_left_zero {
+    padding-left: 3rem;
+}
 .inherit_width { /*Largura herdada*/
     width: inherit;
 }
 .mar_rig_lef_auto { /*Margins automaticas (para centralização)*/
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .mar_10px { /*Margin de 10pixels*/
     margin: 10px;
@@ -58,15 +63,15 @@
 #header .text_decor { /*Para decoração do cabeçalho*/
     text-decoration: underline;
 }
-.limit_y_one {
+.limit_y_one { /*Limitando a altura*/
     height: 250px;
 }
-.p_space_one:not(:first-child) {
+.p_space_one:not(:first-child) { /*padding esquerda, menos no primeiro*/
     padding-left: 40px;
 }
-.m_space_one p:not(:first-child) {
+.m_space_one p:not(:first-child) { /*margin esquerda, menos no primeiro*/
     margin-left: 15px;
 }
-.middle_screen {
+.middle_screen { /*50% da tela*/
     width: 50%;
 }

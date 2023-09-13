@@ -154,6 +154,15 @@
     #Ev3:checked ~ .mark_navgation .btn3 {
         background-color: #000;
     }
+    /*Carrosel Produtos*/
+    .slider_products {
+        height: 320px;
+        overflow: hidden; /*Apagar depois // quebra galho*/
+    }
+    .slides_products {
+        width: 400%;
+        /*Apagar depois // quebra galho*/
+    }
     /*Effects*/
     .manual_btn:hover { /*Botão do carrosel*/
         background-color: #fff;
@@ -216,5 +225,42 @@
 /*Market // Loja*/
 
 .category_market {
-    /**/
+    width: 300px;
+    height: 100vh;
+    border-right: 2px solid #ccc;
 }
+.products_market {
+    width: 980px;
+}
+.products_market .product_desc {
+    align-items: center;
+}
+/*USER*/
+    /*USER*/
+    .top_box {
+        border-bottom: 1px solid #000;
+    }
+    .top_box div {
+        cursor: pointer;
+    }
+    .user_perfil {
+        flex-direction: column;
+    }
+    .user_perfil img {
+        cursor: pointer;
+        border: 3px solid black;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    .user_perfil .img2 {
+        width: 100%;
+        height: 100%;
+    }
+    /*Effects*/
+    .top_box div:hover{
+        opacity: .6 ;
+    }
+    .user_perfil .img2:hover {
+        z-index: 1;
+    }
