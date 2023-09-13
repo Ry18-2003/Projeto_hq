@@ -63,6 +63,10 @@
 .flex-wrap { /*Flex wrap, para definir como os itens se ajustão na tela*/
     flex-wrap: nowrap;
 }
+.text_decor {
+    color: #888;
+    text-decoration: underline;
+}
 #header .text_decor { /*Para decoração do cabeçalho*/
     text-decoration: underline;
 }
