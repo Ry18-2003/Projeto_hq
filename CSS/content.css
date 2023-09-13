@@ -317,3 +317,33 @@ main .descri_ler p {
 .descri_ler *:not(ul, li) {
     margin: 10px 0;
 }
+.market_links {
+    width: 200px;
+}
+.container_3 a {
+    color: #000;
+    text-decoration: none;
+}
+.container_3 div {
+    margin: 40px 0;
+}
+.container_4 img{
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+}
+.container_4 p {
+    padding: 1.25rem;
+    text-align: center;
+    width: 190px;
+}
+.captulos_ler a {
+    color: #000;
+    text-decoration: none;
+}
+/*Effects*/
+.container_3 a:hover, .container_4:hover {
+    opacity: .6;
+    text-decoration: underline;
+}

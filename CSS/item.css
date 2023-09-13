@@ -69,6 +69,9 @@
 .flex-wrap { /*Flex wrap, para definir como os itens se ajustão na tela*/
     flex-wrap: nowrap;
 }
+.flex-wrap_1 {
+    flex-wrap: wrap;
+}
 .text_decor {
     color: #888;
     text-decoration: underline;

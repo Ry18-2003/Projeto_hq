@@ -38,9 +38,25 @@ h1, h2, h3, h4, h5, h6, p {
     width:100%;
 }
 .container_product {
-    width: 400px;
     height: 300px;
     padding: 1.25rem;
+    width: 400px;
+}
+.container_3 {
+    background-color: #ccc;
+    border-radius: 20px;
+    height: fit-content;
+    margin: 30px 15px;
+    padding: .1rem;
+}
+.container_4 {
+    border: 1px solid #000;
+    background-color: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 61px;
+    margin: 30px 60px;
+    width: 300px;
 }
 @media(min-width:100%) {
     .container {
