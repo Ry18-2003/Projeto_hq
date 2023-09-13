@@ -21,7 +21,7 @@
     }
     .slide img{
         height: 100%;
-        object-fit: cover; /*Ajusta imagens*/
+        object-fit: fill; /*Ajusta imagens*/
         width: 100%; /*Ativar caso de erro*/
     }
     .manual_navgation { /*posição do btns*/
