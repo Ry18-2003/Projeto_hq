@@ -243,6 +243,10 @@
     .top_box {
         border-bottom: 1px solid #000;
     }
+    .top_box a {
+        text-decoration: none;
+        color: #000;
+    }
     .top_box div {
         cursor: pointer;
     }
