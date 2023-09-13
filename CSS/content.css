@@ -302,6 +302,9 @@
     height: 400px;
     width: 850px;
 }
+main .descri_ler p {
+    margin-left: 10px;
+}
 .descri_ler *:not(ul, li) {
     margin: 10px 0;
 }
