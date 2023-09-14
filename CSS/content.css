@@ -298,6 +298,18 @@
         color: #000;
         text-decoration: none;
     }
+    .notifi_area {
+        background-color: #ccc;
+        border-radius: 15px;
+        height: 100%;
+        margin: 10px;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    .notifi_area div {
+        padding: 10px 20px;
+    }
     /*Effects*/
     .top_box div:hover{
         opacity: .6 ;
