@@ -342,6 +342,15 @@ main .descri_ler p {
     color: #000;
     text-decoration: none;
 }
+.c_btns {
+    outline: none;
+    padding: 1rem 0;
+}
+.c_btns a {
+    padding: 1rem;
+    color: #000;
+    text-decoration: none;
+}
 .imgs {
     flex-direction: column;
     align-items: center;
