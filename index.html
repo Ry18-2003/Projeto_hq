@@ -48,29 +48,29 @@
                             <div class="slider">
                                 <nav class="flex slides">
                                     <!--Radio Btns-->
-                                    <input type="radio" name="radio-btn" id="radio1"> 
-                                    <input type="radio" name="radio-btn" id="radio2"> 
-                                    <input type="radio" name="radio-btn" id="radio3"> 
-                                    <input type="radio" name="radio-btn" id="radio4">
-                                    <input type="radio" name="radio-btn" id="radio5">
-                                    <input type="radio" name="radio-btn" id="radio6">
+                                    <input type="radio" name="radio-btn" id="radio1" onclick="setSlide(1)"> 
+                                    <input type="radio" name="radio-btn" id="radio2" onclick="setSlide(2)"> 
+                                    <input type="radio" name="radio-btn" id="radio3" onclick="setSlide(3)"> 
+                                    <input type="radio" name="radio-btn" id="radio4" onclick="setSlide(4)">
+                                    <input type="radio" name="radio-btn" id="radio5" onclick="setSlide(5)">
+                                    <input type="radio" name="radio-btn" id="radio6" onclick="setSlide(6)">
                                     <!--Img slides-->
-                                    <div class="slide pos_relative one_slide">
+                                    <div class="slide pos_relative one_slide" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
                                         <a href="Series/Made_in_abyss/made_in_abyss.html"><img src="IMG/made_in_abyss_cape.jpg" alt="Primeira imagens"></a>
                                     </div>
-                                    <div class="slide pos_relative two_slide">
+                                    <div class="slide pos_relative two_slide" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
                                         <a href="Series/Rezero/rezero.html"><img src="IMG/rezero.jpg" alt="Primeira imagens"></a>
                                     </div>
-                                    <div class="slide pos_relative three_slide">
+                                    <div class="slide pos_relative three_slide" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
                                         <img src="IMG/ruv.jpeg" alt="Primeira imagens">
                                     </div>
-                                    <div class="slide pos_relative four_slide">
+                                    <div class="slide pos_relative four_slide" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
                                         <img src="IMG/selo_nico_robin.png" alt="Primeira imagens">
                                     </div>
-                                    <div class="slide pos_relative five_slide">
+                                    <div class="slide pos_relative five_slide" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
                                         <img src="IMG/oh_i_hate_this.jpg" alt="Primeira imagens">
                                     </div>
-                                    <div class="slide pos_relative six_slide">
+                                    <div class="slide pos_relative six_slide" onmouseover="pauseCarousel()" onmouseout="resumeCarousel()">
                                         <img src="IMG/angel3.png" alt="Primeira imagens">
                                     </div>
                                     <!--Nav auto-->
@@ -140,7 +140,39 @@
                                     <label for="Ev3" class="manual_btn ev_btn bt33"></label>
                                 </nav>
                             </div>
-                        </section><!--Fim da area dos carrosels-->
+                        </section><!--Fim da area dos carrosels principais-->
+                        <section class="container_sub carousel-container">
+                            <div class="carousel">
+                                <div class="product"> <!-- Produto 1 -->
+                                    <!-- Conteúdo do produto -->
+                                    <a href="#">
+                                        <img src="IMG/images.jfif" alt="">
+                                    </a>
+                                </div>
+                                <div class="product"> <!-- Produto 2 -->
+                                    <!-- Conteúdo do produto -->
+                                    <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
+                                </div>
+                                <div class="product"> <!-- Produto 2 -->
+                                    <!-- Conteúdo do produto -->
+                                    <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
+                                </div>
+                                <div class="product"> <!-- Produto 2 -->
+                                    <!-- Conteúdo do produto -->
+                                    <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
+                                </div>
+                                <div class="product"> <!-- Produto 2 -->
+                                    <!-- Conteúdo do produto -->
+                                    <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
+                                </div>
+                                <!-- Adicione mais produtos conforme necessário -->
+                            </div>
+                            
+                            <div class="carousel_buttons">
+                                <button class="prev_button">Anterior</button>
+                                <button class="next_button">Próximo</button>
+                            </div>                            
+                        </section>
                         <div class="posts_area"><!--Area de lançamentos-->
                             <h2>Atualizados</h2>
                             <div class="posts"></div>
@@ -151,6 +183,7 @@
                 </footer>
             </div>
         </div>
-        <script src="JavaScript/script.js"></script>
+        <script src="JavaScript/script_carousel_main.js"></script>
+        <script src="JavaScript/script_carousel_sub.js"></script>
     </body>
 </html>
