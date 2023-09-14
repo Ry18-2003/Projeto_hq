@@ -217,7 +217,26 @@
     height: 350px;
 }
 .catalog img {
+    width: 55%;
     height: 100%;
+}
+.catalog_item {
+    padding-left: 20px;
+}
+.catalog .middle_screen {
+    margin: 0 10px;
+}
+.catalog a {
+    color: #000;
+    text-decoration: none;
+}
+.catalog_item div:not(:first-child){
+    padding: 20px 0;
+}
+.catalog_desc {
+    margin-top: 10px;
+    height: 280px;
+    overflow: auto;
 }
 .catalog .btns { /*BTN COM OS GENEROS < ESTILIZAR*/
     outline: none;
