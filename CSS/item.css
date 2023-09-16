@@ -57,6 +57,9 @@
 .mar_10px { /*Margin de 10pixels*/
     margin: 10px;
 }
+.mar_15px { /*Margin de 10pixels*/
+    margin: 15px 0;
+}
 .mar_20px {
     margin: 20px 0;
 }
