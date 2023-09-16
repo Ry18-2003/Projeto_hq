@@ -28,7 +28,7 @@
         margin-top: -40px;
         position: relative;
     }
-    .manual_btn, .auto_navgation label, .mark_navgation div{ /*Como os btns vão ficar*/
+    .manual_btn, .auto_navgation label{ /*Como os btns vão ficar*/
         border: 4px solid #ddd;
         border-radius: 50%;
         cursor: pointer;
@@ -39,7 +39,7 @@
     .auto_navgation label {
         border: 4px solid #000;
     }
-    .auto_navgation, .mark_navgation {
+    .auto_navgation {
         margin-bottom: 40px;
         margin-top: 360px;
         position: absolute;
@@ -101,21 +101,18 @@
         height: 160px;
         width: 480px;
     }
-    .mark_navgation {
-        margin-top: -47px;
-    }
-    /*.ev_btn {
-        border: 4px solid #000;
-    }
-    .ev_btn:not(:last-child) {
-        margin-right: 40px;
-    }*/
     .slide_ev:not(:first-child) {
         margin-top: 10px;
     }
     .slide_space {
         background-color: transparent;
         height: 80px;
+    }
+    .ev_nav {
+        margin-top: -35px;
+    }
+    .btn1, .btn2, .btn3 {
+        border: 3px solid #000
     }
     /*Manipulação do radio evento*/
     #Ev1:checked ~ .firts_evt {
