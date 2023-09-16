@@ -65,7 +65,7 @@
     #radio5:checked ~ .auto_navgation .auto_btn5 {
         background-color: #0AA;
     }
-    #radio6:checked ~ .auto_navgation .auto_btn6  {
+    #radio6:checked ~ .auto_navgation .auto_btn6 {
         background-color: #0AA;
     }
     #radio1:checked ~ .one_slide {
@@ -101,12 +101,15 @@
         height: 160px;
         width: 480px;
     }
-    .ev_btn {
+    .mark_navgation {
+        margin-top: -47px;
+    }
+    /*.ev_btn {
         border: 4px solid #000;
     }
     .ev_btn:not(:last-child) {
         margin-right: 40px;
-    }
+    }*/
     .slide_ev:not(:first-child) {
         margin-top: 10px;
     }
@@ -114,41 +117,18 @@
         background-color: transparent;
         height: 80px;
     }
-    .mark_navgation div{
-        border: 4px solid transparent;
-    }
     /*Manipulação do radio evento*/
     #Ev1:checked ~ .firts_evt {
         margin-top: 10px;
         transition: .6s;
     }
-    #Ev1:checked ~ .mark_navgation {
-        margin: 0;
-        margin-top: -860px;
-        width: 480px;
-    }
-    #Ev1:checked ~ .mark_navgation .btn1,
-    #Ev2:checked ~ .mark_navgation .btn2,
-    #Ev3:checked ~ .mark_navgation .btn3 {
-        background-color: #000;
-    }
     #Ev2:checked ~ .firts_evt {
         margin-top: -420px;
         transition: .6s;
     }
-    #Ev2:checked ~ .mark_navgation {
-        margin: 0;
-        margin-top: -430px;
-        width: 480px;
-    }
     #Ev3:checked ~ .firts_evt {
         margin-top: -850px;
         transition: .6s;
-    }
-    #Ev3:checked ~ .mark_navgation {
-        margin: 0;
-        margin-top: 0px;
-        width: 480px;
     }
     /*Outro*/
     .carousel-container {
@@ -215,12 +195,10 @@
     }
     /*Effects*/
     .manual_btn:hover { /*Botão do carrosel*/
-        background-color: #fff;
+        background-color: #ff0;
         transition: .1s;
     }
-    .ev_btn:hover {
-        background-color: #000;
-    }
+
 
 /*Pesquisa*/
     /*Catalago de pesquisa, Leitura HQ*/
