@@ -258,21 +258,8 @@
 .catalog .btns { /*BTN COM OS GENEROS < ESTILIZAR*/
     outline: none;
 }
-/*Market // Loja*/
-
-.category_market {
-    width: 300px;
-    height: 100vh;
-    border-right: 2px solid #ccc;
-}
-.products_market {
-    width: 980px;
-}
-.products_market .product_desc {
-    align-items: center;
-}
 /*USER*/
-    /*USER*/
+/*USER*/
     #no_pad {
         padding-top: 0;
     }
@@ -427,3 +414,13 @@ main .descri_ler p {
     cursor: pointer; /* Cursor do mouse ao passar por cima */
 }
 /*FIM----Outros*/
+/*PAGINA LOJA*/
+.category_market {
+    width: 300px;
+    height: 100vh;
+    border-right: 2px solid #ccc;
+}
+.products_market {
+    width: 960px;
+}
+/*FIM --- PAGINA LOJA*/

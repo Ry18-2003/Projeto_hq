@@ -43,59 +43,68 @@
                     <div class="container container_top flex">
                         <div class="category_market">
                             <h3>Categorias</h3>
-                            <div class="flex-wrap"><!--Wrap!!!!!!!!!!!!!!!--></div>
+                            <div id="botoes-filtro">
+                                <label><input type="checkbox" data-filtro="frutas"> Frutas</label>
+                                <label><input type="checkbox" data-filtro="vegetais"> Vegetais</label>
+                                <!-- Adicione mais categorias, se necessário -->
+                            </div>
+                            <ul>
+                                <li class="item" data-categoria="frutas">Maçã</li>
+                                <li class="item" data-categoria="vegetais">Cenoura</li>
+                                <li class="item" data-categoria="frutas">Banana</li>
+                                <li class="item" data-categoria="vegetais">Alface</li>
+                                <!-- Outros itens -->
+                            </ul>
+                            
                         </div>
                         <nav class="products_market">
                             <h2>Quadrinhos</h2>
-                            <div class="slider_products"> <!--O Carrosel-->
-                                <div class="slides_products flex"> <!--Parte rotacional-->
-                                    <input type="button" id="btn_prod_1">
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                            <section id="lista-itens" class="container_sub carousel_container">
+                                <div class="item carousel c1" data-categoria="frutas">
+                                    <div class="product"> <!-- Produto 1 -->
+                                        <!-- Conteúdo do produto -->
+                                        <a href="#">
+                                            <img src="IMG/images.jfif" alt="">
+                                        </a>
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                                    <div class="product"> <!-- Produto 2 -->
+                                        <!-- Conteúdo do produto -->
+                                        <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                                    <div class="product"> <!-- Produto 2 -->
+                                        <!-- Conteúdo do produto -->
+                                        <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                                    <div class="product"> <!-- Produto 2 -->
+                                        <!-- Conteúdo do produto -->
+                                        <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                                    <div class="product"> <!-- Produto 2 -->
+                                        <!-- Conteúdo do produto -->
+                                        <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                                    <div class="product"> <!-- Produto 2 -->
+                                        <!-- Conteúdo do produto -->
+                                        <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
+                                    <div class="product"> <!-- Produto 2 -->
+                                        <!-- Conteúdo do produto -->
+                                        <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                     </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
-                                    </div>
-                                    <div class="slide_product container_product flex">
-                                        <img class="middle_screen" src="IMG/baju.jpg" alt="Imagem de quadrinho">
-                                        <div class="middle_screen product_desc flex pad_zero text_b">Descrição meio que um pouco grande</div>
-                                    </div>
+                                    <!-- Adicione mais produtos conforme necessário -->
                                 </div>
-                                <nav class="flex align_two manual_navgation">
-                                    <label for="btn_prod_1" class="manual_btn"></label>
-                                </nav>
-                            </div>
+                                <div class="carousel_buttons">
+                                    <button class="prev_button prev1">Anterior</button>
+                                    <button class="next_button next1">Próximo</button>
+                                </div>
+                            </section>
                             <h2>Mais quadrinhos</h2>
                         </nav>
                     </div>
                 </main>
             </div>
         </div>
+        <script src="JavaScript/script_carousel_prod.js"></script>
+        <script src="JavaScript/script_filter.js"></script>
     </body>
 </html>

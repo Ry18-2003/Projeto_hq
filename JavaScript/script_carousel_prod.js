@@ -18,7 +18,7 @@ function handleCarouselNavigation(prevButton, nextButton, currentIndex, elements
             const numPages = Math.ceil(carouselElement.children.length / elementsPerPage);
             currentIndex = (numPages - 1) * elementsPerPage;
         }
-
+        
         // Chama a função para atualizar a exibição do carrossel
         updateCarousel(currentIndex, carouselElement);
     });
@@ -43,7 +43,7 @@ function handleCarouselNavigation(prevButton, nextButton, currentIndex, elements
 // Função para atualizar a exibição do carrossel
 function updateCarousel(currentIndex, carouselElement) {
     // Largura de cada elemento (produto) em porcentagem
-    const productWidth = 25; 
+    const productWidth = 33.333; 
     // Calcula a transformação CSS para mover o carrossel
     const translateX = -currentIndex * productWidth + '%';
     // Aplica a transformação CSS para mover o carrossel
@@ -51,6 +51,4 @@ function updateCarousel(currentIndex, carouselElement) {
 }
 
 // Diferentes carrosséis
-handleCarouselNavigation('.prev1', '.next1', 0, 4, '.c1'); // Carrossel 1
-handleCarouselNavigation('.prev2', '.next2', 0, 4, '.c2'); // Carrossel 2
-handleCarouselNavigation('.prev3', '.next3', 0, 4, '.c3'); // Carrossel 3
+handleCarouselNavigation('.prev1', '.next1', 0, 3, '.c1'); // Carrossel 1
