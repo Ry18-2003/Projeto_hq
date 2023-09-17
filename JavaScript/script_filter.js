@@ -17,7 +17,7 @@ checkboxesFiltro.forEach((checkbox) => {
         if (categoriasSelecionadas.length === 0) {
             for (let i = 0; i < itens.length; i++) {
                 const item = itens[i];
-                item.style.display = 'flex'; // Exibe o item
+                item.style.display = 'block'; // Exibe o item
             }
             return;
         }
@@ -29,7 +29,7 @@ checkboxesFiltro.forEach((checkbox) => {
 
             // Verifica se a categoria do item está na lista de categorias selecionadas
             if (categoriasSelecionadas.includes(categoriaItem)) {
-                item.style.display = 'flex'; // Exibe o item
+                item.style.display = 'block'; // Exibe o item
             } else {
                 item.style.display = 'none'; // Oculta o item
             }

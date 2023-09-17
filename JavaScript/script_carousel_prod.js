@@ -42,13 +42,14 @@ function handleCarouselNavigation(prevButton, nextButton, currentIndex, elements
 
 // Função para atualizar a exibição do carrossel
 function updateCarousel(currentIndex, carouselElement) {
-    // Largura de cada elemento (produto) em porcentagem
-    const productWidth = 33.333; 
-    // Calcula a transformação CSS para mover o carrossel
-    const translateX = -currentIndex * productWidth + '%';
+    // Largura de cada elemento (produto) em pixels
+    const productWidthInPixels = 320; // Substitua pelo valor da largura em pixels desejado
+    // Calcula o valor de deslocamento em pixels
+    const translateXInPixels = -currentIndex * productWidthInPixels;
     // Aplica a transformação CSS para mover o carrossel
-    carouselElement.style.transform = `translateX(${translateX})`;
+    carouselElement.style.transform = `translateX(${translateXInPixels}px)`;
 }
 
 // Diferentes carrosséis
 handleCarouselNavigation('.prev1', '.next1', 0, 3, '.c1'); // Carrossel 1
+handleCarouselNavigation('.prev2', '.next2', 0, 1, '.c2'); // Carrossel 1
