@@ -50,13 +50,31 @@ h1, h2, h3, h4, h5, h6, p {
     padding: .1rem;
 }
 .container_4 {
-    border: 1px solid #000;
     background-color: #ddd;
+    border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
     height: 61px;
     margin: 30px 60px;
     width: 300px;
+}
+.container_6 {
+    background-color: #ddd;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 80px;
+    margin: 10px 20px;
+    width: 400px;
+}
+.container_6 img{
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 80px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 80px;
 }
 @media(min-width:100%) {
     .container {

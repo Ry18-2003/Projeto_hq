@@ -132,26 +132,22 @@
         position: relative;
         text-align: center;
     }
-    
     .carousel {
         display: flex;
         width: 100%;
         transition: transform 0.5s ease-in-out;
     }
-    
     .product {
         flex: 0 0 20%; /* Cada produto ocupa 100% da largura do contêiner */
         padding:9px;
         border: 1px solid #ccc;
         text-align: center;
     }
-    
     /* Estilo dos botões de navegação */
     .carousel_buttons {
         text-align: center;
         margin-top: 10px;
     }
-    
     .prev_button,
     .next_button {
         background-color: #333;
@@ -162,16 +158,12 @@
         position: absolute;
         top: 0;
     }
-    
     .prev_button {
         left: 0;
     }
-    
     .next_button {
         right: 0;
     }
-    
-
     .prev_button:hover,
     .next_button:hover {
         background-color: #555;
@@ -346,6 +338,10 @@
         opacity:.6;
     }
 /*Paginas*/
+.posts_area a {
+    color: #000;
+    text-decoration: none;
+}
 .frente_ler {
     height: 450px;
 }
