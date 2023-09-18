@@ -4,10 +4,10 @@
 
 **Planejamento:** Posicionar todos os carroseis. E deixar a aréa de posts pronta.
 
-**Final:**
+**Final:** Carroseis finalizados. Area de posts pronta.
 
 ## 17/09/2023 | (dom)
 
-**Planejamento:** Fazer e arrumar todos os posts.
+**Planejamento:** Fazer e arrumar todos os posts. 
 
-**Final:**
+**Final:** Barra de pesquisa pronta. Posts sem progreço.
