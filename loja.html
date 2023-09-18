@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/content.css">
+        <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/item.css">
+        <link rel="stylesheet" href="CSS/search.css">
+        <link rel="stylesheet" href="CSS/style.css">
         <title>Lé Copper</title>
     </head>
     <body id="layout_main">
@@ -27,7 +28,11 @@
                             </div>
                             <div class="flex">
                                 <!--Barra de pesquisa-->
-                                <div class="searth_bar">
+                                <div class="search">
+                                    <input type="text" id="search-input" placeholder="Digite sua pesquisa">
+                                    <div id="search-results">
+                                        <ul id="results-list"></ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="text_a user_area">
@@ -44,11 +49,14 @@
                         <div class="category_market">
                             <h3>Categorias</h3>
                             <div id="botoes-filtro">
-                                <label><input type="checkbox" data-filtro="Quadrinhos">Quadrinhos</label>
+                                <label><input type="checkbox" data-filtro="Quadrinhos"><span class="checkbox-custom">aaaaa</span></label>
                                 <label><input type="checkbox" data-filtro="Mangas">Mangas</label>
                                 <!-- Adicione mais categorias, se necessário -->
                             </div>
-                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="hidden-checkbox">
+                                <span class="checkbox-custom">aaaaa</span>
+                            </label>
                         </div>
                         <nav id="lista-itens" class="products_market">
                             <div class="item" data-categoria="Quadrinhos">
@@ -142,5 +150,6 @@
         </div>
         <script src="JavaScript/script_carousel_prod.js"></script>
         <script src="JavaScript/script_filter.js"></script>
+        <script src="JavaScript/script_search.js"></script>
     </body>
 </html>

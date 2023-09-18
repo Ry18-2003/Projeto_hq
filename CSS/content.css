@@ -424,3 +424,33 @@ main .descri_ler p {
     width: 960px;
 }
 /*FIM --- PAGINA LOJA*/
+/* Estilize o rótulo para ficar como uma checkbox personalizada */
+
+  /* Esconda a checkbox padrão */
+  .hidden-checkbox {
+    display: none;
+  }
+  
+  /* Estilize a checkbox personalizada */
+  .checkbox-custom {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  /* Quando a checkbox estiver marcada, modifique a aparência */
+  .hidden-checkbox:checked + .checkbox-custom {
+    background-color: #007bff; /* Cor de fundo quando marcada */
+    border: 1px solid #007bff;
+  }
+  
+  /* Estilize o texto da checkbox */
+  .checkbox-label span {
+    margin-left: 35px; /* Espaço após a checkbox personalizada */
+    font-weight: bold; /* Estilo de fonte quando não marcada */
+  }
+  
+  /* Modifique o texto quando a checkbox estiver marcada */
+  .hidden-checkbox:checked + .checkbox-custom + span {
+    color: #007bff; /* Cor do texto quando marcada */
+  }

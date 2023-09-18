@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/content.css">
+        <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/item.css">
+        <link rel="stylesheet" href="CSS/search.css">
+        <link rel="stylesheet" href="CSS/style.css">
         <title>Lé Copper</title>
     </head>
     <body id="layout_main">
@@ -27,7 +28,11 @@
                             </div>
                             <div class="flex">
                                 <!--Barra de pesquisa-->
-                                <div class="searth_bar">
+                                <div class="search">
+                                    <input type="text" id="search-input" placeholder="Digite sua pesquisa">
+                                    <div id="search-results">
+                                        <ul id="results-list"></ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="text_a user_area">
@@ -322,5 +327,6 @@
         <script src="JavaScript/script_carousel_main.js"></script>
         <script src="JavaScript/script_carousel_sub.js"></script>
         <script src="JavaScript/script_carousel_event.js"></script>
+        <script src="JavaScript/script_search.js"></script>
     </body>
 </html>

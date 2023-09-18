@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "titulo": "Produto 1",
+        "descricao": "Este é o produto número 1.",
+        "url": "../Series/Made_in_abyss/made_in_abyss.html"
+    },
+    {
+        "titulo": "Produto 2",
+        "descricao": "Este é o produto número 2."
+    },
+    {
+        "titulo": "Produto 3",
+        "descricao": "Este é o produto número 3."
+    },
+    {
+        "titulo": "Produto 4",
+        "descricao": "Este é o produto número 4."
+    },
+    {
+        "titulo": "Produto 5",
+        "descricao": "Este é o produto número 5."
+    }
+]
