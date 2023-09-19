@@ -3,7 +3,7 @@ function handleCarouselNavigation(prevButton, nextButton, currentIndex, elements
     // Seleciona os botões de navegação do carrossel
     const prevButtonElement = document.querySelector(prevButton);
     const nextButtonElement = document.querySelector(nextButton);
-    
+
     // Seleciona o elemento do carrossel
     const carouselElement = document.querySelector(carouselClass);
 
@@ -18,7 +18,7 @@ function handleCarouselNavigation(prevButton, nextButton, currentIndex, elements
             const numPages = Math.ceil(carouselElement.children.length / elementsPerPage);
             currentIndex = (numPages - 1) * elementsPerPage;
         }
-        
+
         // Chama a função para atualizar a exibição do carrossel
         updateCarousel(currentIndex, carouselElement);
     });
