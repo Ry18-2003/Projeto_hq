@@ -101,6 +101,17 @@
         height: 160px;
         width: 480px;
     }
+    .slide_ev h3, .slide_ev div {
+        padding: 10px;
+    }
+    .slide_ev div {
+        margin-left: 10px;
+        padding-bottom: 15%;
+    }
+    .slide_ev a {
+        color: #000;
+        text-decoration: none;
+    }
     .slide_ev:not(:first-child) {
         margin-top: 10px;
     }
@@ -200,6 +211,12 @@
     .item p {
         cursor: pointer;
     }
+    .item > h2 {
+        margin: 15px;
+    }
+    .item > section {
+        margin-left: -1px;
+    }
     .container_search_bar {
         width: 100%;
     }
@@ -269,25 +286,37 @@
         padding: 0;   /* Opcional: para remover qualquer espaço interno */
         cursor: pointer; /* Opcional: define o cursor como uma mão ao passar o mouse sobre o botão */
     }
+    #drop_content {
+        background-color: #999;
+        height: 600px;
+    }
     .drop-content {
         display: none;
         background-color: #fff;
         position: absolute;
+        height: fit-content;
         margin-top: -5px;
+        margin-left: -20px;
     }
-    .drop-content a{
+    #header .drop-content a{
         border: 1px solid #000;
         color: #000;
-        padding: 12px 16px;
+        padding: 20px 16px;
         background-color: #fff;
+        height: 100%;
         text-decoration: none;
-        display: block;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
     }
-    .drop-content a:hover {
-        opacity: .6;
+    #header .drop-content a:hover {
+        width: 100%;
+        background-color: #ccc;
     }
     .drop:hover .drop-content {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 /*USER*/
     #no_pad {
@@ -448,7 +477,10 @@ main .descri_ler p {
 .category_market {
     width: 300px;
     height: 100vh;
-    border-right: 2px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.category_market > h3 {
+    margin: 15px;
 }
 .products_market {
     width: 960px;
@@ -466,6 +498,7 @@ main .descri_ler p {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
+    padding: 5px;
   }
   
   /* Quando a checkbox estiver marcada, modifique a aparência */
@@ -484,3 +517,44 @@ main .descri_ler p {
   .hidden-checkbox:checked + .checkbox-custom + span {
     color: #007bff; /* Cor do texto quando marcada */
   }
+  /*LOGIN E CADASTRO*/
+
+.main_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_div .reg {
+    height: 450px;
+}
+.sub_div {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10%;
+    height: 300px;
+    padding-top: 20px;
+    text-align: center;
+    width: 300px;
+}
+.sub_div .itens_menu_log_reg {
+    text-align: start;
+    padding: 20px;
+}
+.sub_div .itens_menu_log_reg * {
+    margin: 5px 0;
+}
+.sub_div button {
+    border: 2px solid black;
+    border-radius: 10px;;
+}
+.sub_div button a {
+    text-decoration: none;
+    color: #000;
+}
+.sub_div button, .sub_div input {
+    margin-top: 35px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}

@@ -31,7 +31,7 @@
     padding: .5rem;
 }
 /*Effects*/
-#header a:hover { /*Esmaecimento dos itens no cabeçalho*/
+#header a:hover:not(.drop a) { /*Esmaecimento dos itens no cabeçalho*/
     border-radius: 50%;
     opacity: .4;
 }

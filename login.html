@@ -22,7 +22,7 @@
                             <a class="flex iten_container" href="index.html"><img class="img_logo" src="IMG/Logo.png" alt="logo.png"></a><!--Logo-->
                             <div class="pad_one text_a">
                                 <!--Areas principais do site-->
-                                <a href="index.html">Home</a>
+                                <a class="text_decor" href="index.html">Home</a>
                                 <a href="mangas.html">Ler</a>
                                 <a href="loja.html">Lojá</a>
                             </div>
@@ -37,38 +37,38 @@
                             </div>
                             <div class="text_a user_area">
                                 <!--Areas de users-->
-                                <a href="user.html"><img src="IMG/user_icon.svg" alt="user_icon"></a>
-                                <a href="user_fav.html"><img src="IMG/299063_heart_icon.svg" alt="fav_icon"></a>
-                                <a href="user_notificações.html"><img src="IMG/6351963_alarm_alert_attention_bell_notification_icon.svg" alt="sino_icon"></a>
+                                <div class="drop">
+                                    <button type="button" class="drop-btn"><img src="IMG/user_icon.svg" alt="user_icon"></button>
+                                    <div id="drop_content" class="drop-content text_b iten_container">
+                                        <a href="login.html">Login</a>
+                                        <a href="cadastro.html">Registro</a>
+                                    </div>
+                                </div>
+                                <a href="user_fav.html"><img src="IMG/299063_heart_icon.svg" alt=""></a>
+                                <a href="user_notificações.html"><img src="IMG/6351963_alarm_alert_attention_bell_notification_icon.svg" alt=""></a>
                             </div>
                         </div>
                     </nav>
-                </header>
+                </header><!--Fim do cabeçalho-->
                 <main id="main">
-                    <div class="container container_top">
-                        <div class="top_box flex align_two user_area pad_zero">
-                            <div><a href="user.html">Editar Perfio</a></div>
-                            <p>&nbsp;|&nbsp;</p>
-                            <div><b><a href="user_notificações.html">Notificações</a></b></div>
-                            <p>&nbsp;|&nbsp;</p>
-                            <div><a href="user_fav.html">Favoritos</a></div>
-                        </div>
-                        <div class="noticias container pad_two" id="no_pad">
-                            <div class="flex align_one border_b_gray">
-                                <h2 class=" pad_left_zero pad_zero">Notificações</h2>
-                                <p class="pad_two text_decor cursor_pointer">Marcar como lidas</p>
-                            </div>
-                            <a href="Notifi/notifi01.html">
-                                <div class="notif_div">
-                                    <h3>Site online</h3>
-                                    <div>Acesso ao site pela internet</div>
+                    <div class="container">
+                        <div class="main_div">
+                            <div class="sub_div">
+                                <h4>Login</h4>
+                                <div class="itens_menu_log_reg">
+                                    <h6>login</h6>
+                                    <input type="text" placeholder="Login">
+                                    <h6>senha</h6>
+                                    <input type="password" placeholder="Senha">
                                 </div>
-                            </a>
+                                <div>
+                                    <button><a href="user.html">Entrar</a></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </main>
             </div>
         </div>
-        <script src="JavaScript/script_search.js"></script>
     </body>
 </html>
