@@ -201,7 +201,7 @@
         cursor: pointer;
     }
     .container_search_bar {
-        width: 650px;
+        width: 100%;
     }
     .search_bar {
         background-color: #fff;

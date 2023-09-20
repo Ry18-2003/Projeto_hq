@@ -83,10 +83,13 @@
     text-decoration: underline;
 }
 .limit_y_one { /*Limitando a altura*/
-    height: 250px;
+    height: 200px;
 }
 .p_space_one:not(:first-child) { /*padding esquerda, menos no primeiro*/
     padding-left: 40px;
+}
+.filter {
+    display: inline-block;
 }
 .m_space_one p:not(:first-child) { /*margin esquerda, menos no primeiro*/
     margin-left: 15px;

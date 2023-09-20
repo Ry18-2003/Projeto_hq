@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/item.css">
         <link rel="stylesheet" href="CSS/search.css">
+        <link rel="stylesheet" href="CSS/search_catalog.css">
         <link rel="stylesheet" href="CSS/style.css">
         <title>Lé Copper</title>
     </head>
@@ -51,44 +52,43 @@
                             <div class="flex space_two item">
                                 <div class="p_space_one">
                                     <h4>Origem</h4>
-                                    <div class="flex p_space_one m_space_one item">
-                                        <p>Japão</p>
-                                        <p>Coreia</p>
-                                        <p>China</p>
-                                        <p>EUA</p>
-                                        <p>Europa</p>
-                                        <p>Nacional</p>
-                                    </div>
+                                    <select id="origemFilter">
+                                        <option value="qualquer">Qualquer</option>
+                                        <option value="japao">Japão</option>
+                                        <option value="coreia">Coreia</option>
+                                        <option value="china">China</option>
+                                        <option value="eua">EUA</option>
+                                        <option value="europa">Europa</option>
+                                        <option value="nacional">Nacional</option>
+                                    </select>
                                 </div>
                                 <div class="p_space_one">
                                     <h4>Status</h4>
-                                    <div class="flex p_space_one m_space_one item">
-                                        <p>Qualquer</p>
-                                        <p>Completo</p>
-                                        <p>Em andamento</p>
-                                        <p>Hiato</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="m_space_one">
-                                <h4>Organizado por</h4>
-                                <div class="flex p_space_one item">
-                                    <p>Nome</p>
-                                    <p>Popular</p>
-                                    <p>Capítulos</p>
-                                    <p>Novo</p>
-                                    <p>Avaliação</p>
+                                    <select id="statusFilter">
+                                        <option value="qualquer">Qualquer</option>
+                                        <option value="completo">Completo</option>
+                                        <option value="andamento">Em andamento</option>
+                                        <option value="hiato">Hiato</option>
+                                    </select>
                                 </div>
                             </div>
                             <nav class="container_search_bar">
-                                <input type="text" class="search_bar" placeholder="Busca">
+                                <h1>Catálogo de Produtos</h1>
+                                <!-- Barra de Pesquisa -->
+                                <input type="text" id="searchInput" placeholder="Pesquisar por tags">
+                                <button id="searchButton">Pesquisar</button>
+                                <div id="tagSuggestions"></div>
+                                <!-- Checkbox para o Modo de Pesquisa Apurado -->
+                                <label for="advancedMode">Modo de Pesquisa Apurado:</label>
+                                <input type="checkbox" id="advancedMode">
+                                <div id="searchResults"></div>
                             </nav>
                         </div>
                     </section>
                     <section class="container">
                         <!--Area de indexação de quadrinhos-->
-                        <div class="flex catalog">
-                            <a href="Series/Rezero/rezero.html" class="item middle_screen flex">
+                        <div class="flex catalog results">
+                            <a href="Series/Rezero/rezero.html" class="product_catalog item middle_screen flex" data-tags="eletrônicos,computador"  data-origem="japao" data-status="andamento">
                                 <img src="IMG/Re-Zero-1280x1823.webp" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
@@ -98,7 +98,7 @@
                                     <div class="catalog_desc text_a"><p>O estudante do ensino médio Natsuki Subaru foi convocado para um mundo de fantasia, enquanto estava no caminho para casa vindo de uma loja de conveniência! Com base em seu conhecimento de histórias onde as pessoas são transportados para outros mundos, ele assumiu que ele deve ter algum tipo de super poder, mas essa suposição acabou deixando ele espancado e quase morto durante um assalto. Ele é resgatado por uma meio-elfo, Satera, e seu companheiro, um gato mágico pequeno chamado Puck. Eles estão procurando por algo que foi roubado dela, e Subaru decide ajudar. No entanto, muito em breve, ele descobre que ele de fato tem uma habilidade especial. Quando ele morre, ele começa sua aventura...</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Made_in_abyss/made_in_abyss.html" class="item middle_screen flex">
+                            <a href="Series/Made_in_abyss/made_in_abyss.html" class="product_catalog item middle_screen flex results" data-tags="eletrônicos,computador" data-origem="japao" data-status="andamento">
                                 <img src="IMG/MADEINABYSS-CAPA1.jpg" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
@@ -113,6 +113,8 @@
                 </main>
             </div>
         </div>
+        <script src="JavaScript/script_filter_btn.js"></script>
+        <script src="JavaScript/script_filter_catalog.js"></script>
         <script src="JavaScript/script_search.js"></script>
     </body>
 </html>
