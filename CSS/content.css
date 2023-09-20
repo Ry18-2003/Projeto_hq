@@ -259,6 +259,36 @@
     outline: none;
 }
 /*USER*/
+    .drop {
+        position: relative;
+        display: inline-block;
+    }
+    .drop-btn {
+        background: none;
+        border: none; /* Opcional: para remover qualquer borda */
+        padding: 0;   /* Opcional: para remover qualquer espaço interno */
+        cursor: pointer; /* Opcional: define o cursor como uma mão ao passar o mouse sobre o botão */
+    }
+    .drop-content {
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        margin-top: -5px;
+    }
+    .drop-content a{
+        border: 1px solid #000;
+        color: #000;
+        padding: 12px 16px;
+        background-color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+    .drop-content a:hover {
+        opacity: .6;
+    }
+    .drop:hover .drop-content {
+        display: block;
+    }
 /*USER*/
     #no_pad {
         padding-top: 0;
