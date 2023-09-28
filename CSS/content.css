@@ -558,3 +558,14 @@ main .descri_ler p {
     width: 100%;
     outline: none;
 }
+
+
+.botao_link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
