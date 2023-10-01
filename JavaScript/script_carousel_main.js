@@ -3,11 +3,11 @@ document.getElementById("radio1").checked = true;
 
 let intervalId = setInterval(function(){
     nextImage();
-}, 5000);
+}, 2000);
 
 function nextImage() {
     cont++;
-    if (cont > 6){
+    if (cont > 4){
         cont = 1;
     }
 
@@ -19,7 +19,7 @@ function setSlide(slideNumber) {
     clearInterval(intervalId);
     intervalId = setInterval(function(){
         nextImage();
-    }, 5000);
+    }, 2000);
 }
 
 function pauseCarousel() {
@@ -29,5 +29,5 @@ function pauseCarousel() {
 function resumeCarousel() {
     intervalId = setInterval(function(){
         nextImage();
-    }, 5000); // Retomar o intervalo quando o mouse sair do carrossel
+    }, 2000); // Retomar o intervalo quando o mouse sair do carrossel
 }

@@ -62,29 +62,17 @@
     #radio4:checked ~ .auto_navgation .auto_btn4 {
         background-color: #0AA;
     }
-    #radio5:checked ~ .auto_navgation .auto_btn5 {
-        background-color: #0AA;
-    }
-    #radio6:checked ~ .auto_navgation .auto_btn6 {
-        background-color: #0AA;
-    }
     #radio1:checked ~ .one_slide {
         margin-left: 0;
     }
     #radio2:checked ~ .one_slide {
-        margin-left: -16.666666666666668%;
+        margin-left: -16.666666%;
     }
     #radio3:checked ~ .one_slide {
-        margin-left: -33.333333333333336%;
+        margin-left: -33.333333%;
     }
     #radio4:checked ~ .one_slide {
         margin-left: -50%;
-    }
-    #radio5:checked ~ .one_slide {
-        margin-left: -66.66666666666667%;
-    }
-    #radio6:checked ~ .one_slide {
-        margin-left: -83.33333333333334%;
     }
     /*Carrosel de eventos*/
     .events {
