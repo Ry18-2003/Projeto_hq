@@ -246,7 +246,8 @@
     padding-left: 20px;
 }
 .catalog .middle_screen {
-    margin: 0 10px;
+    margin: 10px 0;
+    padding: 0 5px;
 }
 .catalog a {
     color: #000;
