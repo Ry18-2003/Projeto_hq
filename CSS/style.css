@@ -76,6 +76,21 @@ h1, h2, h3, h4, h5, h6, p {
     top: -1px;
     width: 80px;
 }
+.container_compra {
+    padding: 10px;
+}
+.container_compra *{
+    margin: 10px 0;
+}
+.container_compra button {
+    padding: 5px 20px;
+}
+.container_compra p:first-child {
+    color: #009;
+}
+.container_compra p{
+    color: #090;
+}
 @media(min-width:100%) {
     .container {
         max-width:100%;
