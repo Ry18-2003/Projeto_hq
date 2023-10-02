@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        fetch('../JSON/itens.json') // Substitua pelo caminho do seu arquivo de resultados JSON
+        fetch('/Projeto_hq/JSON/itens.json') // Substitua pelo caminho do seu arquivo de resultados JSON
             .then(response => response.json())
             .then(data => {
                 const filteredResults = data.filter(result => {

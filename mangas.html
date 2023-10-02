@@ -3,15 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/content.css">
-        <link rel="stylesheet" href="CSS/header.css">
-        <link rel="stylesheet" href="CSS/item.css">
-        <link rel="stylesheet" href="CSS/search.css">
-        <link rel="stylesheet" href="CSS/search_catalog.css">
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="/Projeto_hq/CSS/style.css">
+        <link rel="stylesheet" href="/Projeto_hq/CSS/header.css">
+        <link rel="stylesheet" href="/Projeto_hq/CSS/content.css">
+        <link rel="stylesheet" href="/Projeto_hq/CSS/item.css">
+        <link rel="stylesheet" href="/Projeto_hq/CSS/search.css">
+        <link rel="stylesheet" href="/Projeto_hq/CSS/search_catalog.css">
         <title>Lé Copper</title>
     </head>
     <body id="layout_main">
+        <script src="/Projeto_hq/JavaScript/script_search.js"></script>
         <div>
             <div>
                 <header id="header">
@@ -20,12 +21,12 @@
                         <!--Delimitação do cabeçalho-->
                         <div class="iten_container flex flex-wrap align_one">
                             <!--Organização dos itens-->
-                            <a class="flex iten_container" href="index.html"><img class="img_logo" src="IMG/Logo.png" alt="logo.png"></a><!--Logo-->
+                            <a class="flex iten_container" href="/Projeto_hq/index.html"><img class="img_logo" src="/Projeto_hq/IMG/Logo.png" alt="logo.png"></a><!--Logo-->
                             <div class="pad_one text_a">
                                 <!--Areas principais do site-->
-                                <a href="index.html">Home</a>
-                                <a class="text_decor" href="mangas.html">Ler</a>
-                                <a href="loja.html">Lojá</a>
+                                <a href="/Projeto_hq/index.html">Home</a>
+                                <a href="/Projeto_hq/mangas.html">Ler</a>
+                                <a href="/Projeto_hq/loja.html">Lojá</a>
                             </div>
                             <div class="flex">
                                 <!--Barra de pesquisa-->
@@ -38,13 +39,19 @@
                             </div>
                             <div class="text_a user_area">
                                 <!--Areas de users-->
-                                <a href="user.html"><img src="IMG/user_icon.svg" alt="p"></a>
-                                <a href="user_fav.html"><img src="IMG/299063_heart_icon.svg" alt="p"></a>
-                                <a href="user_notificações.html"><img src="IMG/6351963_alarm_alert_attention_bell_notification_icon.svg" alt="p"></a>
+                                <div class="drop">
+                                    <button type="button" class="drop-btn"><img src="/Projeto_hq/IMG/user_icon.svg" alt="user_icon"></button>
+                                    <div id="drop_content" class="drop-content text_b iten_container">
+                                        <a href="/Projeto_hq/login.html">Login</a>
+                                        <a href="/Projeto_hq/cadastro.html">Registro</a>
+                                    </div>
+                                </div>
+                                <a href="/Projeto_hq/user_fav.html"><img src="/Projeto_hq/IMG/299063_heart_icon.svg" alt="p"></a>
+                                <a href="/Projeto_hq/user_notificações.html"><img src="/Projeto_hq/IMG/6351963_alarm_alert_attention_bell_notification_icon.svg" alt="p"></a>
                             </div>
                         </div>
                     </nav>
-                </header>
+                </header><!--Fim do cabeçalho-->
                 <main id="main">
                     <!--Area de procura de quadrinhos-->
                     <section class="index_procura">
@@ -84,8 +91,8 @@
                     <section class="container">
                         <!--Area de indexação de quadrinhos-->
                         <div class="flex catalog results flex-wrap_1">
-                            <a href="Series/Pepper_And_Carrot/pepper_and_carrot.html" class="product_catalog item middle_screen flex" data-tags="aventura,fantasia" data-origem="pt" data-status="andamento">
-                                <img src="IMG/Pepper_And_Carrot.jpg" alt="Pepper And Carrot">
+                            <a href="/Projeto_hq/Series/Pepper_And_Carrot/pepper_and_carrot.html" class="product_catalog item middle_screen flex" data-tags="aventura,fantasia" data-origem="pt" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/Pepper_And_Carrot.jpg" alt="Pepper And Carrot">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>Pepper And Carrot</h4>
@@ -93,8 +100,8 @@
                                     <div class="catalog_desc"><p>"Pepper and Carrot" segue as aventuras de uma jovem bruxa chamada Pepper e seu gato falante Carrot. A história se desenrola em um mundo de fantasia cheio de criaturas mágicas, poções e magia. Pepper é uma bruxa curiosa e apaixonada por experimentar poções e feitiços, o que frequentemente a leva a situações engraçadas e inusitadas. Carrot, seu fiel companheiro felino, a acompanha em todas as suas travessuras.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/MaryDeath/marydeath.html" class="product_catalog item middle_screen flex results" data-tags="cotidiano" data-origem="en" data-status="andamento">
-                                <img src="IMG/marydeath.jpg" alt="">
+                            <a href="/Projeto_hq/Series/MaryDeath/marydeath.html" class="product_catalog item middle_screen flex results" data-tags="cotidiano" data-origem="en" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/marydeath.jpg" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>MaryDeath</h4>
@@ -102,8 +109,8 @@
                                     <div class="catalog_desc"><p>MaryDeath é uma história em quadrinhos sobre a vida, a morte e tudo mais. A história segue uma jovem chamada Mary, que por acaso fez amizade com a Morte. Por que a Morte escolheu se interessar por Maria permanece um mistério, mas apesar de sua presença sempre sombria, Maria encontra conforto em sua companhia.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/The_Other_End_Comics/the_olher_end.html" class="product_catalog item middle_screen flex results" data-tags="cotidiano" data-origem="en" data-status="andamento">
-                                <img src="IMG/The_Olher_End.webp" alt="">
+                            <a href="/Projeto_hq/Series/The_Other_End_Comics/the_olher_end.html" class="product_catalog item middle_screen flex results" data-tags="cotidiano" data-origem="en" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/The_Olher_End.webp" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>The Olher End</h4>
@@ -111,8 +118,8 @@
                                     <div class="catalog_desc"><p>"The Olher End" são quadrinhos divertidos. Feitos por Neil Kohney</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Sandra_And_Woo/sandra_and_woo.html" class="product_catalog item middle_screen flex results" data-tags="cotidiano,relações" data-origem="en" data-status="andamento">
-                                <img src="IMG/Sandra_And_Woo.png" alt="">
+                            <a href="/Projeto_hq/Series/Sandra_And_Woo/sandra_and_woo.html" class="product_catalog item middle_screen flex results" data-tags="cotidiano,relações" data-origem="en" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/Sandra_And_Woo.png" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>Sandra And Woo</h4>
@@ -120,8 +127,8 @@
                                     <div class="catalog_desc"><p>"Sandra and Woo" é uma webcomic que gira em torno das aventuras de Sandra North, uma jovem garota, e seu amigo guaxinim chamado Woo. Juntos, eles embarcam em uma série de histórias envolventes que abrangem desde a vida cotidiana até situações fantásticas. A webcomic combina elementos de aventura, comédia e drama para criar uma experiência de leitura cativante.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Poorly_Drawn_Lines/poorly_drawn_lines.html" class="product_catalog item middle_screen flex results" data-tags="criticas,relações" data-origem="en" data-status="andamento">
-                                <img src="IMG/Poorly_Drawn_Lines.png" alt="">
+                            <a href="/Projeto_hq/Series/Poorly_Drawn_Lines/poorly_drawn_lines.html" class="product_catalog item middle_screen flex results" data-tags="criticas,relações" data-origem="en" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/Poorly_Drawn_Lines.png" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>Poorly Drawn Lines</h4>
@@ -129,8 +136,8 @@
                                     <div class="catalog_desc"><p>"Poorly Drawn Lines" é uma webcomic que apresenta uma série de tirinhas humorísticas e satíricas, criadas pelo artista Reza Farazmand. O foco da webcomic está no humor absurdo e nas situações do dia a dia que são apresentadas de forma criativa e muitas vezes surpreendente. Os personagens variados, que incluem humanos, animais e criaturas fictícias, vivem aventuras estranhas e interações sociais bizarras, tudo isso enquanto exploram temas que abrangem desde a vida cotidiana até a cultura pop, ciência e existencialismo. "Poorly Drawn Lines" é conhecida por seu estilo de desenho simples e peculiar, que adiciona um toque único à comédia das tirinhas. Com seu humor irreverente e muitas vezes surreal, a webcomic atrai leitores que apreciam uma visão cômica e crítica do mundo que nos cerca, por meio de personagens e situações surpreendentes. É uma leitura divertida e inesperada para aqueles que gostam de humor não convencional e imaginação desenfreada.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Nova_Helade/nova_helade.html" class="product_catalog item middle_screen flex results" data-tags="fantasia,robos" data-origem="pt" data-status="andamento">
-                                <img src="IMG/Nova_Helade.webp" alt="">
+                            <a href="/Projeto_hq/Series/Nova_Helade/nova_helade.html" class="product_catalog item middle_screen flex results" data-tags="fantasia,robos" data-origem="pt" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/Nova_Helade.webp" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>Nova Helade</h4>
@@ -138,8 +145,8 @@
                                     <div class="catalog_desc"><p>Em Gigantomaquia acompanhamos a vingança de Gaia contra os seres humanos. Por todos os maus-tratos causados por eles, Gaia está acordando seus filhos, os gigantes, antes adormecidos em suas entranhas, e liberando a fúria deles contra a humanidade. Porfírio, o gigante dos terremotos, é o segundo filho de Gaia a acordar, e está se dirigindo para megapólis de Atenas, a maior cidade de toda a Hélade. A única salvação de Atenas pode ser a Corporação Dédalo, e os seus mechas de combates, os colossos.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Ink_on_the_Side/ink_on_the_side.html" class="product_catalog item middle_screen flex results" data-tags="criticas,cotidiano" data-origem="en" data-status="hiato">
-                                <img src="IMG/ink_on_the_side.jpg" alt="">
+                            <a href="/Projeto_hq/Series/Ink_on_the_Side/ink_on_the_side.html" class="product_catalog item middle_screen flex results" data-tags="criticas,cotidiano" data-origem="en" data-status="hiato">
+                                <img src="/Projeto_hq/IMG/ink_on_the_side.jpg" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>INK on the Ink_on_the_Side</h4>
@@ -147,8 +154,8 @@
                                     <div class="catalog_desc"><p>INK on the Side é uma série de quadrinhos online criada por Sareen Akharjalian em março de 2012. É uma coleção de quadrinhos curtos e humorísticos que abordam uma ampla gama de temas, incluindo questões de gênero, política e os desafios cotidianos da vida no Líbano. Os quadrinhos de Akharjalian são conhecidos por seu humor afiado e comentário social, bem como por seu estilo visual distinto.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Homem-Grilo/homem-grilo.html" class="product_catalog item middle_screen flex results" data-tags="super-heroi" data-origem="pt" data-status="hiato">
-                                <img src="IMG/homem-grilo.jpg" alt="">
+                            <a href="/Projeto_hq/Series/Homem-Grilo/homem-grilo.html" class="product_catalog item middle_screen flex results" data-tags="super-heroi" data-origem="pt" data-status="hiato">
+                                <img src="/Projeto_hq/IMG/homem-grilo.jpg" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>Homem-Grilo</h4>
@@ -156,8 +163,8 @@
                                     <div class="catalog_desc"><p>Luciano Salles é um jovem comum que, após ser picado por um grilo radioativo, adquire habilidades especiais. No entanto, em vez de se tornar um super-herói convencional, ele adota o nome Homem-Grilo e luta contra o crime de maneira única e divertida. Ele não possui superpoderes impressionantes; em vez disso, suas habilidades são bastante estranhas e incluem a capacidade de se comunicar com grilos e produzir sons semelhantes aos de um grilo.</p></div>
                                 </div>
                             </a>
-                            <a href="Series/Gaia/gaia.html" class="product_catalog item middle_screen flex results" data-tags="fantasia,aventura" data-origem="en" data-status="andamento">
-                                <img src="IMG/Gaia.jpg" alt="">
+                            <a href="/Projeto_hq/Series/Gaia/gaia.html" class="product_catalog item middle_screen flex results" data-tags="fantasia,aventura" data-origem="en" data-status="andamento">
+                                <img src="/Projeto_hq/IMG/Gaia.jpg" alt="">
                                 <div class="catalog_item  full_space">
                                     <div class="flex align_one">
                                         <h4>Gaia</h4>
@@ -170,8 +177,8 @@
                 </main>
             </div>
         </div>
-        <script src="JavaScript/script_filter_btn.js"></script>
-        <script src="JavaScript/script_filter_catalog.js"></script>
-        <script src="JavaScript/script_search.js"></script>
+        <script src="/Projeto_hq/JavaScript/script_filter_btn.js"></script>
+        <script src="/Projeto_hq/JavaScript/script_filter_catalog.js"></script>
+        <script src="/Projeto_hq/JavaScript/script_search.js"></script>
     </body>
 </html>
