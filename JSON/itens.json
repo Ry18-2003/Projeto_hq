@@ -1,24 +1,56 @@
 [
     {
         "id": 1,
-        "titulo": "Produto 1",
-        "descricao": "Este é o produto número 1.",
-        "url": "../Series/Made_in_abyss/made_in_abyss.html"
+        "titulo": "Pepper & Carrot",
+        "descricao": "Pepper & Carrot.",
+        "url": "/Projeto_hq/Series/Pepper_And_Carrot/pepper_and_carrot.html"
     },
     {
-        "titulo": "Produto 2",
-        "descricao": "Este é o produto número 2."
+        "id": 2,
+        "titulo": "Gaia",
+        "descricao": "Gaia",
+        "url": "/Projeto_hq/Series/Gaia/gaia.html"
     },
     {
-        "titulo": "Produto 3",
-        "descricao": "Este é o produto número 3."
+        "id": 3,
+        "titulo": "Homem-Grilo",
+        "descricao": "Homem-Grilo",
+        "url":"/Projeto_hq/Series/Homem-Grilo/homem-grilo.html"
     },
     {
-        "titulo": "Produto 4",
-        "descricao": "Este é o produto número 4."
+        "id": 4,
+        "titulo": "INK on the SIDE",
+        "descricao": "INK on the SIDE",
+        "url": "/Projeto_hq/Series/Ink_on_the_Side/ink_on_the_side.html"
     },
     {
-        "titulo": "Produto 5",
-        "descricao": "Este é o produto número 5."
+        "id": 5,
+        "titulo": "MaryDeath",
+        "descricao": "MaryDeath",
+        "url":"/Projeto_hq/Series/MaryDeath/marydeath.html"
+    },
+    {
+        "id": 6,
+        "titulo": "Nova Helade",
+        "descricao": "Nova Helade",
+        "url": "/Projeto_hq/Series/Nova_Helade/nova_helade.html"
+    },
+    {
+        "id": 7,
+        "titulo": "Poorly Drawn Lines",
+        "descricao": "Poorly Drawn Lines",
+        "url": "/Projeto_hq/Series/Poorly_Drawn_Lines/poorly_drawn_lines.html"
+    },
+    {
+        "id": 8,
+        "titulo": "Sandra And Woo",
+        "descricao": "Sandra And Woo",
+        "url":"/Projeto_hq/Series/Sandra_And_Woo/sandra_and_woo.html"
+    },
+    {
+        "id": 9,
+        "titulo": "The Other End",
+        "descricao": "The Other End",
+        "url": "/Projeto_hq/Series/The_Other_End_Comics/the_olher_end.html"
     }
 ]
