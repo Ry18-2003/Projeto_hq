@@ -11,13 +11,13 @@
     }
     .slides { /*Os slides do carrosel distancia entre eles*/
         height: 400px;
-        width: 600%; /*Porcentagem pelo número de imagens*/
+        width: 400%; /*Porcentagem pelo número de imagens*/
     }
     .slides input, .slides_ev input { /*Esconde os inputs de verdade*/
         display: none;
     }
     .slide { /*Ajuste*/
-        width: 16.666666666666668%; /*porcentagem em relação a porcentagem anterior. Assim sendo 100% da imagem*/
+        width: 25%; /*porcentagem em relação a porcentagem anterior. Assim sendo 100% da imagem*/
     }
     .slide img{
         height: 100%;
@@ -66,13 +66,13 @@
         margin-left: 0;
     }
     #radio2:checked ~ .one_slide {
-        margin-left: -16.666666%;
+        margin-left: -25%;
     }
     #radio3:checked ~ .one_slide {
-        margin-left: -33.333333%;
+        margin-left: -50%;
     }
     #radio4:checked ~ .one_slide {
-        margin-left: -50%;
+        margin-left: -75%;
     }
     /*Carrosel de eventos*/
     .events {
